@@ -10,11 +10,9 @@ function App() {
     <div className="App">
       <Routes>
         <Route path={'/sdash'} element={<StudentDash/>}/>
-<<<<<<< HEAD
-        <Route path='/adminlog' element={<AdminLogin/>}/>
-=======
-        <Route path={'/studentlog'} element={<StudentLogin/>}/>
->>>>>>> 0b40956e531baec80d2c5339333c5a3ba364c9e1
+<Route path='/adminlog' element={<AdminLogin/>}/>
+<Route path={'/studentlog'} element={<StudentLogin/>}/>
+
       </Routes>
     </div>
   );
