@@ -15,12 +15,19 @@ function App() {
       {/* <Navbar /> */}
 
       <Routes>
+<<<<<<< HEAD
       <Route path={'/home'} element={<Main child={<Home/>}/>} />
 
         <Route path={'/sdash'} element={<StudentDash/>}/>
 <Route path='/adminlog' element={<AdminLogin/>}/>
 <Route path={'/studentlog'} element={<StudentLogin/>}/>
 <Route path={'/admindash'} element={<AdminDash/>}/>
+=======
+        <Route path={'/'} element={<Home />} />
+        <Route path={'/sdash'} element={<StudentDash/>}/>
+        <Route path='/adminlog' element={<AdminLogin/>}/>
+        <Route path={'/studentlog'} element={<StudentLogin/>}/>
+>>>>>>> 4c51b38a34486e7e495bf8d743744cc0ee2f1469
 
       </Routes>
     </div>

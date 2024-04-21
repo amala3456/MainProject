@@ -1,7 +1,7 @@
 
 .studentlog {
     height: 100vh;
-    background-image: linear-gradient(to right,rgba(34, 51, 0, 0.466),#006D5B);
+    /* background-image: linear-gradient(to top,commonTeal,white); */
     display: flex;
     flex-direction: column;
     justify-content: center;
