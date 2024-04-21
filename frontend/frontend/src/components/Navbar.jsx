@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import { Link } from 'react-router-dom';
-import logo from './images/LOGO_ICTAK.png'
+import logo from './images/Picsart_24-04-21_23-05-30-495.jpg'
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import {MenuItem, Menu } from '@mui/material';
@@ -25,14 +25,15 @@ const Navbar = () => {
     setAnchorEl(null);
   };
   return (
-    <div>
+    <div style={{fontFamily:"Sora, sans-serif"}}>
+      
       <Box sx={{ flexGrow: 1 }}>
-  <AppBar position="static" sx={{ color: '#352f44', backgroundColor: '#009B81', height: '70px' }}>
+  <AppBar position="static" sx={{ color: '#352f44', backgroundColor: '#009B81', height: '70px' ,padding:"10px"}}>
       <Toolbar>
-        <Typography align='left' variant="h6" component="div" sx={{ flexGrow: 1, fontFamily: 'BricolageGrotesque' }}>
+        <Typography align='left' variant="h6" component="div" sx={{ flexGrow: 1, fontFamily: 'BricolageGrotesque',color:"white",font:"revert",fontSize:"28px",fontWeight:"500"}}>
           <Box display="flex" alignItems="center">
-            <img src={logo} alt="Logo" style={{ padding:"10px", height: '75px', marginRight: '10px' }} />
-            {/* Employee Dashboard */}
+            <img src={logo} alt="Logo" style={{ padding:"10px", width:"100px", marginRight: '10px',marginTop:"10px" }} />
+            {/* Employee Dashboard */} ICT Academy of Kerala
           </Box>
         </Typography>
         {isMobile ? (
@@ -56,7 +57,7 @@ const Navbar = () => {
           // Render normal buttons for larger screens
           <>
             <Button variant='contained' color="primary" style={{ borderRadius: "18px", marginRight: '20px', backgroundColor: '#00463a' }}>
-              <Link to={''} style={{ textDecoration: "none", color: 'white' }}> HOME</Link>
+              <Link to={''} style={{ textDecoration: "none", color: 'white', }}> HOME</Link>
             </Button>
             <Button variant='contained' color="inherit" style={{ borderRadius: "18px", marginRight: '20px', backgroundColor: '#00463a' }}>
               <Link to={"/"} style={{ textDecoration: "none", color: 'white' }}>EVENTS</Link>

@@ -15,11 +15,11 @@ const Home = () => {
     return (  
 
 <div style={{margin:"0px",padding:"0px",borderTop:"0px solid #00a88c",borderRadius:"0px",backgroundColor:"#E7F6FC"}}>
-  
+
 {/* banner */}
 <div style={{backgroundImage:"url('')",justifyContent: 'flex-start',alignItems: 'center',display: 'flex', border: "0px solid white", backgroundColor: "#009B81", backgroundSize: 'auto', textAlign: 'center', padding: '10px ',paddingBottom:"20px",paddingRight:"100px",paddingLeft:"100px" }}>
 
-    <Container sx={{ borderRadius: '20px',border: "3px solid #00322a" ,marginr:"0px", backgroundImage: "url('https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/Sz9LmzxmBjyscquj0/videoblocks-serious-young-businessman-working-on-computer-indoors_svzmrk3wp_thumbnail-1080_01.png')", backgroundSize: '100%', color: 'black', textAlign: 'center', padding: '150px'}}>
+    <Container sx={{ borderRadius: '20px',border: "3px solid #00322a" ,marginTop:"20px", backgroundImage: "url('https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/Sz9LmzxmBjyscquj0/videoblocks-serious-young-businessman-working-on-computer-indoors_svzmrk3wp_thumbnail-1080_01.png')", backgroundSize: '100%', color: 'black', textAlign: 'center', padding: '150px'}}>
         <Typography variant="h2" style={{ fontSize: '36px',margin: '0px 10px 20px 700px' }}>Welcome to ICTAK Exam Registration Portal</Typography>
         <Typography variant="body1" style={{ fontSize: '18px', margin: '0px 10px 20px 700px' }}>Register for exams and track your progress with ease! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, exercitationem.</Typography>
         <Button variant="contained" color="primary" href="" sx={{  margin: '0px 10px 20px 700px',borderRadius: '20px',backgroundColor: 'deepskyblue',padding: '10px 40px','&:hover': { backgroundColor: 'lightblue'},'&:active': { backgroundColor: 'skyblue'},'& .MuiButton-label': { fontSize: '16px',fontWeight: 'bold',}}}>Login</Button>
@@ -190,22 +190,22 @@ Learn how to use the MERN stack, a JavaScript/JSON-based three-tier architecture
 </div>
 {/* carousel */}
 <div style={{ border: "1px solid white", backgroundColor: "#A5CFE3", backgroundSize: 'contain', textAlign: 'center', padding: '80px ' }}>
-  <div><Typography style={{margin:"0 0 0px 0",fontSize:"40px"}}>Courses</Typography></div>
+  <Typography style={{margin:"0 0 0px 0",fontSize:"40px"}}>Courses</Typography>
 <div id="carouselExampleCaptions" class="carousel slide">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button  type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
 
-  </div>
+  </div >
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="https://yourengineer.in/wp-content/uploads/2021/07/PD-Leverage-MERN-Stack-for-building-efficient-websites-Thumbnail.png" class="d-block w-80 mx-auto" style={{width:"48%"}} alt="..."/>
       <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
+        <h5>MERN  Stack</h5>
         <p>Some representative placeholder content for the first slide.</p>
       </div>
     </div>
@@ -213,7 +213,7 @@ Learn how to use the MERN stack, a JavaScript/JSON-based three-tier architecture
     <div class="carousel-item">
       <img src="https://image.freepik.com/free-vector/cyber-security-illustration-concept-with-people_23-2148530634.jpg" class="d-block w-80 mx-auto" style={{ width: '50%' }} alt="..."/>
       <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
+        <h5>Cyber Security</h5>
         <p>Some representative placeholder content for the second slide.</p>
       </div>
     </div>
@@ -221,7 +221,7 @@ Learn how to use the MERN stack, a JavaScript/JSON-based three-tier architecture
     <div class="carousel-item">
       <img src="https://wallpaperbat.com/img/392227-what-is-data-science-dataquest.jpg" class="d-block w-80 mx-auto" style={{ width: '59%' }} alt="..."/>
       <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
+        <h5>Data Science</h5>
         <p>Some representative placeholder content for the third slide.</p>
       </div>
     </div>
@@ -229,7 +229,7 @@ Learn how to use the MERN stack, a JavaScript/JSON-based three-tier architecture
     <div class="carousel-item">
       <img src="https://p.kindpng.com/picc/s/13-132027_-net-framework-hd-png-download.png" class="d-block w-80 mx-auto" style={{ width: '45%' }} alt="..."/>
       <div class="carousel-caption d-none d-md-block">
-        <h5>4th slide label</h5>
+        <h5>.NET Devoloper</h5>
         <p>Some representative placeholder content for the 4thslide.</p>
       </div>
     </div>
@@ -237,7 +237,7 @@ Learn how to use the MERN stack, a JavaScript/JSON-based three-tier architecture
     <div class="carousel-item">
       <img src="http://blog.mymeanstackdeveloper.com/wp-content/uploads/2018/08/Mean-Stack-Development.png" class="d-block w-80 mx-auto" style={{ width: '53.5%' }} alt="..."/>
       <div class="carousel-caption d-none d-md-block">
-        <h5>4th slide label</h5>
+        <h5>MEAN Stack</h5>
         <p>Some representative placeholder content for the 4thslide.</p>
       </div>
     </div>
@@ -245,7 +245,7 @@ Learn how to use the MERN stack, a JavaScript/JSON-based three-tier architecture
     <div class="carousel-item">
       <img src="https://img.graphicsurf.com/2020/10/software-testing-vector-free-illustration.jpg" class="d-block w-80 mx-auto" style={{ width: '50%' }} alt="..."/>
       <div class="carousel-caption d-none d-md-block">
-        <h5>4th slide label</h5>
+        <h5>Software Testing</h5>
         <p>Some representative placeholder content for the 4thslide.</p>
       </div>
     </div>
@@ -268,7 +268,7 @@ Learn how to use the MERN stack, a JavaScript/JSON-based three-tier architecture
         <section className=''>
           <MDBRow className='d-flex justify-content-center'>
             <MDBCol lg='6'>
-            <Typography style={{margin: "10px 800px 20px 0px",fontSize:"40px"}}>More About Us</Typography>
+            <Typography style={{margin: "10px 800px 20px 0px",fontSize:"40px",fontFamily:"sors,sans-seriff"}}>More About Us</Typography>
               <div className='ratio ratio-16x9'>
                 <iframe
                   className='shadow-1-strong rounded'
@@ -296,28 +296,28 @@ Learn how to use the MERN stack, a JavaScript/JSON-based three-tier architecture
 {/* footer */}
 <footer style={{ border: "1px solid white", backgroundColor: '#bbfff4', padding: '50px', margin: "0px", textAlign: 'center' }}>
 <MDBFooter bgColor='light' className='text-center text-lg-start text-muted'>
-      <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
+      <section className='d-flex justify-content-center justify-content-lg-b#etween p-4 border-bottom'>
         <div className='me-5 d-none d-lg-block'>
           <span>Get connected with us on social networks:</span>
         </div>
 
         <div>
-          <a href='' className='me-4 text-reset'>
+          <a href='#' className='me-4 text-reset'>
             <MDBIcon color='secondary' fab icon='facebook-f' />
           </a>
-          <a href='' className='me-4 text-reset'>
+          <a href='#' className='me-4 text-reset'>
             <MDBIcon color='secondary' fab icon='twitter' />
           </a>
           <a href='' className='me-4 text-reset'>
             <MDBIcon color='secondary' fab icon='google' />
           </a>
-          <a href='' className='me-4 text-reset'>
+          <a href='#' className='me-4 text-reset'>
             <MDBIcon color='secondary' fab icon='instagram' />
           </a>
-          <a href='' className='me-4 text-reset'>
+          <a href='#' className='me-4 text-reset'>
             <MDBIcon color='secondary' fab icon='linkedin' />
           </a>
-          <a href='' className='me-4 text-reset'>
+          <a href='#' className='me-4 text-reset'>
             <MDBIcon color='secondary' fab icon='github' />
           </a>
         </div>
