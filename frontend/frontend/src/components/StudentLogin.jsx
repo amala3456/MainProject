@@ -24,7 +24,7 @@ const StudentLogin = () => {
       <br /><br />
      
       <Button variant="contained" style={{backgroundColor:'#006D5B', width: '50%', padding: '7px',borderRadius:'50px'}}>Login</Button>
-     
+     <br /><br />
       <h5 style={{color:'black',fontFamily:'TimesNewRoman',fontWeight:'lighter'}}>Not a Student?
      
           <Link style={{color:'#006D5B', textDecoration:'none',fontFamily:'TimesNewRoman',fontWeight:'bold'}}> AdminLogin</Link> 

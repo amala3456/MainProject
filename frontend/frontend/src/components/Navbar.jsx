@@ -4,13 +4,14 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
+// import IconButton from '@mui/material/IconButton';
 import { Link } from 'react-router-dom';
-import logo from './images/LOGO_ICTAK.png'
+import logo from '../images/LOGO_ICTAK.png'
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import {MenuItem, Menu } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
+import StudentLogin from './StudentLogin';
+// import MenuIcon from '@mui/icons-material/Menu';
 const Navbar = () => {
 
   const theme = useTheme();
@@ -27,7 +28,7 @@ const Navbar = () => {
   return (
     <div>
       <Box sx={{ flexGrow: 1 }}>
-  <AppBar position="static" sx={{ color: '#352f44', backgroundColor: '#009B81', height: '70px' }}>
+  <AppBar position="static" sx={{ color: '#352f44', backgroundColor: '#004d4d', height: '70px' }}>
       <Toolbar>
         <Typography align='left' variant="h6" component="div" sx={{ flexGrow: 1, fontFamily: 'BricolageGrotesque' }}>
           <Box display="flex" alignItems="center">
@@ -55,16 +56,16 @@ const Navbar = () => {
         ) : (
           // Render normal buttons for larger screens
           <>
-            <Button variant='contained' color="primary" style={{ borderRadius: "18px", marginRight: '20px', backgroundColor: '#00463a' }}>
+            <Button variant='contained' color="primary" style={{ borderRadius: "18px", marginRight: '20px',backgroundColor: '#007373' }}>
               <Link to={''} style={{ textDecoration: "none", color: 'white' }}> HOME</Link>
             </Button>
-            <Button variant='contained' color="inherit" style={{ borderRadius: "18px", marginRight: '20px', backgroundColor: '#00463a' }}>
-              <Link to={"/"} style={{ textDecoration: "none", color: 'white' }}>EVENTS</Link>
+            {/* <Button variant='contained' color="inherit" style={{ borderRadius: "18px", marginRight: '20px', backgroundColor: '#00463a' }}>
+              <Link to={"/"} style={{ textDecoration: "none", color: 'white' }}>LOGIN</Link>
+            </Button> */}
+            <Button variant='contained' color="inherit" style={{ borderRadius: "18px", marginRight: '20px', backgroundColor: '#007373' }}>
+              <Link to={""} style={{ textDecoration: "none", color: 'white' }}>ABOUT US</Link>
             </Button>
-            <Button variant='contained' color="inherit" style={{ borderRadius: "18px", marginRight: '20px', backgroundColor: '#00463a' }}>
-              <Link to={""} style={{ textDecoration: "none", color: 'white' }}>ABOUT us</Link>
-            </Button>
-            <Button variant='contained' color="inherit" style={{ borderRadius: "18px", marginRight: '20px', backgroundColor: '#00463a' }}>
+            <Button variant='contained' color="inherit" style={{ borderRadius: "18px", marginRight: '20px', backgroundColor: '#007373' }}>
               <Link to={"/"} style={{ textDecoration: "none", color: 'white' }}>CONTACT US</Link>
             </Button>
 

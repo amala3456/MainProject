@@ -7,8 +7,8 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import { CardActionArea } from '@mui/material';
-import socialLogos from './images/Social-Icons.png'
-import logo from './images/LOGO_ICTAK.png'
+import socialLogos from '../images/Social-Icons.png';
+import logo from '../images/LOGO_ICTAK.png';
 import {MDBFooter,MDBContainer,MDBCol,MDBRow,MDBIcon } from 'mdb-react-ui-kit';
 
 const Home = () => {
@@ -17,12 +17,12 @@ const Home = () => {
 <div style={{margin:"0px",padding:"0px",borderTop:"0px solid #00a88c",borderRadius:"0px",backgroundColor:"#E7F6FC"}}>
   
 {/* banner */}
-<div style={{backgroundImage:"url('')",justifyContent: 'flex-start',alignItems: 'center',display: 'flex', border: "0px solid white", backgroundColor: "#009B81", backgroundSize: 'auto', textAlign: 'center', padding: '10px ',paddingBottom:"20px",paddingRight:"100px",paddingLeft:"100px" }}>
+<div style={{backgroundImage:"url('')",justifyContent: 'flex-start',alignItems: 'center',display: 'flex', border: "0px solid white", backgroundSize: 'auto', textAlign: 'center', padding: '10px ',paddingBottom:"20px",paddingRight:"100px",paddingLeft:"100px" }}>
 
     <Container sx={{ borderRadius: '20px',border: "3px solid #00322a" ,marginr:"0px", backgroundImage: "url('https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/Sz9LmzxmBjyscquj0/videoblocks-serious-young-businessman-working-on-computer-indoors_svzmrk3wp_thumbnail-1080_01.png')", backgroundSize: '100%', color: 'black', textAlign: 'center', padding: '150px'}}>
         <Typography variant="h2" style={{ fontSize: '36px',margin: '0px 10px 20px 700px' }}>Welcome to ICTAK Exam Registration Portal</Typography>
         <Typography variant="body1" style={{ fontSize: '18px', margin: '0px 10px 20px 700px' }}>Register for exams and track your progress with ease! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, exercitationem.</Typography>
-        <Button variant="contained" color="primary" href="" sx={{  margin: '0px 10px 20px 700px',borderRadius: '20px',backgroundColor: 'deepskyblue',padding: '10px 40px','&:hover': { backgroundColor: 'lightblue'},'&:active': { backgroundColor: 'skyblue'},'& .MuiButton-label': { fontSize: '16px',fontWeight: 'bold',}}}>Login</Button>
+        <Button variant="contained" color="primary" href="" sx={{  margin: '0px 10px 20px 700px',borderRadius: '20px',backgroundColor: 'teal',padding: '10px 40px','&:hover': { backgroundColor: 'lightblue'},'&:active': { backgroundColor: 'skyblue'},'& .MuiButton-label': { fontSize: '16px',fontWeight: 'bold',}}}>Login</Button>
     </Container>
 
     <div style={{width: 'calc(50% - 10px)',left: '25%',padding:"10px",border:"2px solid black",position: 'absolute',bottom: '-2.5px',width: '50%',textAlign: 'center',backgroundColor:"white",borderRadius:"10px"}}><Typography variant='h2' style={{fontSize: '36px',margin:"8px"}}>TRAINING ADVANTAGES</Typography></div>
