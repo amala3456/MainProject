@@ -17,7 +17,7 @@ const Home = () => {
 <div style={{margin:"0px",padding:"0px",borderTop:"0px solid #00a88c",borderRadius:"0px",backgroundColor:"#E7F6FC"}}>
 
 {/* banner */}
-<div style={{backgroundImage:"url('')",justifyContent: 'flex-start',alignItems: 'center',display: 'flex', border: "0px solid white", backgroundSize: 'auto', textAlign: 'center', padding: '10px ',paddingBottom:"20px",paddingRight:"100px",paddingLeft:"100px" }}>
+<div style={{backgroundColor:"#009B81",backgroundImage:"url('')",justifyContent: 'flex-start',alignItems: 'center',display: 'flex', border: "0px solid white", backgroundSize: 'auto', textAlign: 'center', padding: '10px ',paddingBottom:"20px",paddingRight:"100px",paddingLeft:"100px" }}>
 
     <Container sx={{ borderRadius: '20px',border: "3px solid #00322a" ,marginTop:"20px", backgroundImage: "url('https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/Sz9LmzxmBjyscquj0/videoblocks-serious-young-businessman-working-on-computer-indoors_svzmrk3wp_thumbnail-1080_01.png')", backgroundSize: '100%', color: 'black', textAlign: 'center', padding: '150px'}}>
         <Typography variant="h2" style={{ fontSize: '36px',margin: '0px 10px 20px 700px' }}>Welcome to ICTAK Exam Registration Portal</Typography>
