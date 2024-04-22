@@ -7,6 +7,7 @@ import StudentLogin from './components/StudentLogin';
 import Home from './components/Home';
 import AdminDash from './components/AdminDash';
 import Main from './components/Main';
+import StudentsCSA from './components/StudentsCSA';
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
         <Route path={'/sdash'} element={<StudentDash/>}/>
 <Route path='/adminlog' element={<AdminLogin/>}/>
 <Route path={'/studentlog'} element={<StudentLogin/>}/>
-<Route path={'/admindash'} element={<AdminDash/>}/>
+<Route path={'/admindash'} element={<Main child={<AdminDash/>}/>} />
+<Route path={'/sCSA'} element={<Main child={<StudentsCSA/>}/>} />
 
       </Routes>
     </div>

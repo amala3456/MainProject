@@ -25,7 +25,7 @@ const Home = () => {
         <Button variant="contained" color="primary" href="" sx={{  margin: '0px 10px 20px 700px',borderRadius: '20px',backgroundColor: 'teal',padding: '10px 40px','&:hover': { backgroundColor: 'lightblue'},'&:active': { backgroundColor: 'skyblue'},'& .MuiButton-label': { fontSize: '16px',fontWeight: 'bold',}}}>Login</Button>
     </Container>
 
-    <div style={{width: 'calc(50% - 10px)',left: '25%',padding:"10px",border:"2px solid black",position: 'absolute',bottom: '-2.5px',width: '50%',textAlign: 'center',backgroundColor:"white",borderRadius:"10px"}}><Typography variant='h2' style={{fontSize: '36px',margin:"8px"}}>TRAINING ADVANTAGES</Typography></div>
+    <div style={{width: 'calc(50% - 10px)',left: '25%',padding:"10px",border:"2px solid black",position: 'absolute',bottom: '-10px',width: '50%',textAlign: 'center',backgroundColor:"white",borderRadius:"10px"}}><Typography variant='h2' style={{fontSize: '36px',margin:"8px"}}>TRAINING ADVANTAGES</Typography></div>
  </div>
 {/* cards */}
 <div style={{backgroundImage:"url('')", border: "2px solid white", backgroundColor: "", backgroundSize: 'cover', textAlign: 'center', padding: '40px ' }}>

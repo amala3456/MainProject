@@ -29,12 +29,13 @@ const Navbar = () => {
     <div style={{fontFamily:"Sora, sans-serif"}}>
       
       <Box sx={{ flexGrow: 1 }}>
-  <AppBar position="static" sx={{ color: '#352f44', backgroundColor: '#009B81', height: '70px' ,padding:"10px"}}>
+  <AppBar position="static" sx={{ color: '#352f44', backgroundColor: '#009B81', height: '85px'}}>
       <Toolbar>
         <Typography align='left' variant="h6" component="div" sx={{ flexGrow: 1, fontFamily: 'BricolageGrotesque',color:"white",font:"revert",fontSize:"28px",fontWeight:"500"}}>
           <Box display="flex" alignItems="center">
-            <img src={logo} alt="Logo" style={{ padding:"10px", width:"100px", marginRight: '10px',marginTop:"10px" }} />
+            <img src={logo} alt="Logo" style={{ padding:"10px", width:"80px", marginRight: '10px' }} />
             {/* Employee Dashboard */} ICT Academy of Kerala
+            {/* #009B81 */}
           </Box>
         </Typography>
         {isMobile ? (
