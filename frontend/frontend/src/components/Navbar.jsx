@@ -59,7 +59,7 @@ const Navbar = () => {
           // Render normal buttons for larger screens
           <>
             <Button variant='contained' color="primary" style={{ borderRadius: "18px", marginRight: '20px',backgroundColor: '#00463a' }}>
-              <Link to={''} style={{ textDecoration: "none", color: 'white' }}> HOME</Link>
+              <Link to={'/'} style={{ textDecoration: "none", color: 'white' }}> HOME</Link>
             </Button>
             {/* <Button variant='contained' color="inherit" style={{ borderRadius: "18px", marginRight: '20px', backgroundColor: '#00463a' }}>
               <Link to={"/"} style={{ textDecoration: "none", color: 'white' }}>LOGIN</Link>
