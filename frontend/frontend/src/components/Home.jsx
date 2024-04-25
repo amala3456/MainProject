@@ -19,14 +19,21 @@ const Home = () => {
 {/* banner */}
 <div style={{backgroundColor:"#009B81",backgroundImage:"url('')",justifyContent: 'flex-start',alignItems: 'center',display: 'flex', border: "0px solid white", backgroundSize: 'auto', textAlign: 'center', padding: '10px ',paddingBottom:"20px",paddingRight:"100px",paddingLeft:"100px" }}>
 
-    <Container sx={{ borderRadius: '20px',border: "3px solid #00322a" ,marginTop:"20px", backgroundImage: "url('https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/Sz9LmzxmBjyscquj0/videoblocks-serious-young-businessman-working-on-computer-indoors_svzmrk3wp_thumbnail-1080_01.png')", backgroundSize: '100%', color: 'black', textAlign: 'center', padding: '150px'}}>
+    <Container sx={{ borderRadius: '18px',border: "3px solid #00322a" ,marginTop:"10px", backgroundImage: "url('https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/Sz9LmzxmBjyscquj0/videoblocks-serious-young-businessman-working-on-computer-indoors_svzmrk3wp_thumbnail-1080_01.png')", backgroundSize: '100%', color: 'black', textAlign: 'center', padding: '150px'}}>
         <Typography variant="h2" style={{ fontSize: '36px',margin: '0px 10px 20px 700px' }}>Welcome to ICTAK Exam Registration Portal</Typography>
         <Typography variant="body1" style={{ fontSize: '18px', margin: '0px 10px 20px 700px' }}>Register for exams and track your progress with ease! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, exercitationem.</Typography>
         <Button variant="contained" color="primary" href="" sx={{  margin: '0px 10px 20px 700px',borderRadius: '20px',backgroundColor: 'teal',padding: '10px 40px','&:hover': { backgroundColor: 'lightblue'},'&:active': { backgroundColor: 'skyblue'},'& .MuiButton-label': { fontSize: '16px',fontWeight: 'bold',}}}>Login</Button>
     </Container>
-
-    <div style={{width: 'calc(50% - 10px)',left: '25%',padding:"10px",border:"2px solid black",position: 'absolute',bottom: '-10px',width: '50%',textAlign: 'center',backgroundColor:"white",borderRadius:"10px"}}><Typography variant='h2' style={{fontSize: '36px',margin:"8px"}}>TRAINING ADVANTAGES</Typography></div>
+{/* <div style={{width: 'calc(50% - 10px)',left: '25%',padding:"10px",border:"2px solid black",position: 'absolute',bottom: '-10px',width: '50%',textAlign: 'center',backgroundColor:"white",borderRadius:"10px"}}><Typography variant='h2' style={{fontSize: '36px',margin:"8px"}}>TRAINING ADVANTAGES</Typography></div> */}
  </div>
+ <div class="row" style={{backgroundColor:"#009B81",height:"50px"}}>
+  <div class="d-flex justify-content-center align-item-center col-md-12">
+    <div class="fixedform_shadow p-4 card" style={{ width: '70rem' }}>
+      <h4 class="text-center m-0 pb-4 font-bold register_title">TRAINING ADVANTAGES</h4>
+    </div>
+  </div>
+</div>
+
 {/* cards */}
 <div style={{backgroundImage:"url('')", border: "2px solid white", backgroundColor: "", backgroundSize: 'cover', textAlign: 'center', padding: '40px ' }}>
 <Box sx={{border:"0px solid white",display: 'flex', gap: 2.8, padding: '40px '}}>
