@@ -9,18 +9,18 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-<<<<<<< HEAD
+
 
     "axios": "^1.6.8",
 
     "cors": "^2.8.5",
 
     "dotenv": "^16.4.5",
-=======
+
     "axios": "^1.6.8",
 "cors": "^2.8.5",
 "dotenv": "^16.4.5",
->>>>>>> 082380796cf989b227f269eb859c0df834be2b4e
+
     "express": "^4.19.2",
     "mongoose": "^8.3.2",
     "morgan": "^1.10.0"
