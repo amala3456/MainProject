@@ -5,74 +5,172 @@ import { Link } from 'react-router-dom';
 const AdminDash = () => {
   return (
 
-    <div style={{padding:"30px"}}>
-          <Box style={{paddingBottom:"30px"}}>
+<div style={{padding:"30px"}}>
+      <Box style={{paddingBottom:"30px"}}>
       <Typography sx={{fontWeight:"300",fontSize:"40px",fontFamily:"sora,sans-seriff"}}>BATCHES</Typography>
       </Box>
-      <div className="row">
-        <div className="col-sm-6">
-          <div className="card mb-4" style={{ border: '1.4px solid black' }}>
-            <div className="card-body">
-              <h5 className="card-title">KKEM March CSA</h5>
-              <p className="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, autem.</p>
-              <Button style={{ width:"20%", borderRadius:"11px",borderColor:"#009B81",backgroundColor: '#009B81', color: 'white' }}><Link to={'/sCSA'} style={{ textDecoration: "none", color: 'white' }}>Details</Link></Button>
-            </div>
-          </div>
-        </div>
-        
-        <div className="col-sm-6">
-          <div className="card mb-4" style={{ border: '1.4px solid black' }}>
-            <div className="card-body">
-              <h5 className="card-title">KKEM March DSA</h5>
-              <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <Button style={{ width:"20%", borderRadius:"11px",borderColor:"#009B81",backgroundColor: '#009B81', color: 'white' }}><Link to={''} style={{ textDecoration: "none", color: 'white' }}>Details</Link></Button>
-            </div>
-          </div>
-        </div>
-      </div>
+      
 
       <div className="row">
-        <div className="col-sm-6">
-          <div className="card mb-4" style={{ border: '1.4px solid black' }}>
-            <div className="card-body">
-              <h5 className="card-title">KKEM March MLAI</h5>
-              <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <Button style={{ width:"20%", borderRadius:"11px",borderColor:"#009B81",backgroundColor: '#009B81', color: 'white' }}><Link to={''} style={{ textDecoration: "none", color: 'white' }}>Details</Link></Button>
-            </div>
-          </div>
-        </div>
-        
-        <div className="col-sm-6">
-          <div className="card mb-4" style={{ border: '1.4px solid black' }}>
-            <div className="card-body">
-              <h5 className="card-title">KKEM March FSD</h5>
-              <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <Button style={{ width:"20%", borderRadius:"11px",borderColor:"#009B81",backgroundColor: '#009B81', color: 'white' }}><Link to={''} style={{ textDecoration: "none", color: 'white' }}>Details</Link></Button>
-            </div>
-          </div>
-        </div>
+{/* here */}
+<div className="col-sm-6">
+  <div className="card mb-4" style={{ height: '206px',border: "1.6px solid black" }}> 
+    <div className="card" style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '10px', width: '100%', border: "0px" }}>
+      <div className="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light" style={{ height: '200%' }}>
+        <img src="https://7wdata.be/wp-content/uploads/2016/05/data-scientist-venn-diagram1.jpg" className="img-fluid" alt="Nature" style={{ width: '95%' }} /> 
+        <a href="#!">
+          <div className="mask"></div>
+        </a>
       </div>
+      <div className="card-body" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', textAlign: 'center' }}>
+        <h5 className="card-title">KKEM March DSA</h5>
+        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <Button
+          component={Link}
+          to="/sdsa"
+          variant="contained"
+          style={{ width: "50%", borderRadius: "11px", backgroundColor: '#009B81', color: 'white', marginTop: '10px', alignSelf: 'center' }}>
+          Details
+        </Button>
+      </div>
+    </div>
+  </div>
+</div>
 
-      <div className="row">
+{/* till her */}
+       
         <div className="col-sm-6">
-          <div className="card mb-4" style={{ border: '1.4px solid black' }}>
-            <div className="card-body">
-              <h5 className="card-title">KKEM March ST</h5>
-              <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <Button style={{ width:"20%", borderRadius:"11px",borderColor:"#009B81",backgroundColor: '#009B81', color: 'white' }}><Link to={''} style={{ textDecoration: "none", color: 'white' }}>Details</Link></Button>
-            </div>
+          <div className="card mb-4" style={{border: "1.6px solid black"}}>
+          <div className="card" style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '10px', width: '100%'}}>
+      <div className="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+        <img src="https://www.topsinfosolutions.com/wp-content/uploads/2019/01/info-graphics.png" className="img-fluid" alt="Nature" style={{ width: '100%', objectFit: 'cover' }} />
+        <a href="#!">
+          <div className="mask"></div>
+        </a>
+      </div>
+      <div className="card-body" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', textAlign: 'center' }}>
+        <h5 className="card-title">KKEM March FSD</h5>
+        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <Button
+          component={Link}
+          to="/sfsd"
+          variant="contained"
+          style={{ width: "50%", borderRadius: "11px", backgroundColor: '#009B81', color: 'white', marginTop: '10px', alignSelf: 'center' }}
+        >
+          Details
+        </Button>
+      </div>
+     </div>
           </div>
         </div>
-        
-        <div className="col-sm-6">
-          <div className="card mb-4" style={{ border: '1.4px solid black' }}>
-            <div className="card-body">
-              <h5 className="card-title">KKEM March ST</h5>
-              <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <Button style={{ width:"20%", borderRadius:"11px",borderColor:"#009B81",backgroundColor: '#009B81', color: 'white' }}><Link to={''} style={{ textDecoration: "none", color: 'white' }}>Details</Link></Button>
-            </div>
+{/* here */}
+<div className="col-sm-6">
+          <div className="card mb-4" style={{height:"100px"}}>
+          <div className="card" style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '10px', width: '100%', margin: '',border:"1.6px solid black" }}>
+      <div className="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light" style={{height:"100%"}}>
+        <img src="https://images.interestingengineering.com/images/DECEMBER/Machine_Learning_whatyoushouldknow.jpg" className="img-fluid" alt="Nature" style={{ width: '86.7%', objectFit: 'contain' }} />
+        <a href="#!">
+          <div className="mask"></div>
+        </a>
+      </div>
+      <div className="card-body" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', textAlign: 'center' }}>
+        <h5 className="card-title">KKEM March MLAI</h5>
+        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <Button
+          component={Link}
+          to="/smlai"
+          variant="contained"
+          style={{ width: "50%", borderRadius: "11px", backgroundColor: '#009B81', color: 'white', marginTop: '10px', alignSelf: 'center' }}
+        >
+          Details
+        </Button>
+      </div>
+     </div>
           </div>
         </div>
+{/* till her */}
+
+{/* here */}
+<div className="col-sm-6">
+          <div className="card mb-4" >
+          <div className="card" style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '10px', width: '100%', margin: '',border:"1.6px solid black" }}>
+      <div className="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+        <img src="https://www.topsinfosolutions.com/wp-content/uploads/2019/01/info-graphics.png" className="img-fluid" alt="Nature" style={{ width: '100%', objectFit: 'cover' }} />
+        <a href="#!">
+          <div className="mask"></div>
+        </a>
+      </div>
+      <div className="card-body" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', textAlign: 'center' }}>
+        <h5 className="card-title">KKEM March CSA</h5>
+        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <Button
+          component={Link}
+          to="/scsa"
+          variant="contained"
+          style={{ width: "50%", borderRadius: "11px", backgroundColor: '#009B81', color: 'white', marginTop: '10px', alignSelf: 'center' }}
+        >
+          Details
+        </Button>
+      </div>
+     </div>
+          </div>
+        </div>
+{/* till her */}
+
+{/* here */}
+<div className="col-sm-6">
+          <div className="card mb-4" >
+          <div className="card" style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '10px', width: '100%', margin: '',border:"1.6px solid black" }}>
+      <div className="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+        <img src="https://itguru.vn/blog/wp-content/uploads/2020/03/Sofware-Testing-Life-Cycle-945x972.png" className="img-fluid" alt="Nature" style={{ width: '86.9%', objectFit: 'cover' }} />
+        <a href="#!">
+          <div className="mask"></div>
+        </a>
+      </div>
+      <div className="card-body" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', textAlign: 'center' }}>
+        <h5 className="card-title">KKEM March ST</h5>
+        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <Button
+          component={Link}
+          to="/sst"
+          variant="contained"
+          style={{ width: "50%", borderRadius: "11px", backgroundColor: '#009B81', color: 'white', marginTop: '10px', alignSelf: 'center' }}
+        >
+          Details
+        </Button>
+      </div>
+     </div>
+          </div>
+        </div>
+{/* till her */}
+
+{/* here */}
+<div className="col-sm-6">
+          <div className="card mb-4" >
+          <div className="card" style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '10px', width: '100%', margin: '',border:"1.6px solid black" }}>
+      <div className="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+        <img src="https://www.topsinfosolutions.com/wp-content/uploads/2019/01/info-graphics.png" className="img-fluid" alt="Nature" style={{ width: '100%', objectFit: 'cover' }} />
+        <a href="#!">
+          <div className="mask"></div>
+        </a>
+      </div>
+      <div className="card-body" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', textAlign: 'center' }}>
+        <h5 className="card-title">Card title</h5>
+        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <Button
+          component={Link}
+          to="/sDetails"
+          variant="contained"
+          style={{ width: "50%", borderRadius: "11px", backgroundColor: '#009B81', color: 'white', marginTop: '10px', alignSelf: 'center' }}
+        >
+          Details
+        </Button>
+      </div>
+     </div>
+          </div>
+        </div>
+{/* till her */}
+
       </div>
     </div>
   );
