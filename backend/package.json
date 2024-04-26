@@ -9,12 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-<<<<<<< HEAD
     "axios": "^1.6.8",
-=======
-    "cors": "^2.8.5",
->>>>>>> 8ac108ce5bf4b9f98a36d6e41b91b400293a6060
-    "dotenv": "^16.4.5",
+"cors": "^2.8.5",
+"dotenv": "^16.4.5",
     "express": "^4.19.2",
     "mongoose": "^8.3.2",
     "morgan": "^1.10.0"
