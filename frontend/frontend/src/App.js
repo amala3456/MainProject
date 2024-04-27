@@ -20,9 +20,9 @@ function App() {
       <Routes>
       <Route path={'/'} element={<Main child={<Home/>}/>} />
 
-        <Route path={'/sdash'} element={<StudentDash/>}/>
-       <Route path='/adminlog' element={<AdminLogin/>}/>
-       <Route path={'/studentlog'} element={<StudentLogin/>}/>
+      <Route path={'/sdash'} element={<StudentDash/>}/>
+       <Route path='/adminlog' element={<Main child={<AdminLogin/>}/>} />
+       <Route path={'/studentlog'} element={<Main child={<StudentLogin/>}/>} />
        <Route path={'/admindash'} element={<Main child={<AdminDash/>}/>} />
 
 {/* student details */}
