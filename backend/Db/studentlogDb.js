@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 mongoose.connect(process.env.mongodb_URL)
 .then(()=>{
-    console.log('Db connected successfully...');
+    console.log('Sdash-Db connected...');
 })
 
 .catch(()=>{
