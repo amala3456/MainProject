@@ -9,12 +9,14 @@ const adminlogRouter = require('./Routes/adminlogRoutes');
 const adminlogDb = require('./Db/adminlogDb');
 const sdashDb=require('./Db/sdashDb');
 const sdashRouter=require('./Routes/sdashRoutes');
+const adminRouter=require('./Routes/admindashRoutes');
 const app = new express();
 const PORT = process.env.PORT ;
 app.use(morgan('dev'));
 app.use(cors())
 app.use('/api',studentlogRouter)
 app.use('/api',adminlogRouter)
+app.use('/api',adminRouter)
 
 
 

@@ -12,8 +12,8 @@ router.post('/add', async (req, res) => {
 
         // If a similar entry exists, prevent duplicates
         if (existingUser) {
-         
-            return res.status(404).json({ error: 'Duplicate entry: A user with this email already exists.' });
+            console.log('Duplicate entry: A user with this email already exists.');
+            return res.status(400).json({ error: 'Duplicate entry: A user with this email already exists.' });
         }
 
         // Create a new document using Mongoose model

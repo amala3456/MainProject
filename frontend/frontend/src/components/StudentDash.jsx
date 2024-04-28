@@ -39,16 +39,18 @@ const [batch, setBatch] = useState("N/A");
         console.log("clicked",users)
       axios.post("http://localhost:3005/api/add",users)
       .then((res)=>{
-      
-        console.log(res);
+
     if (res.data.error) {
             console.log(res.data)
-            alert("duplicate entry"); // Show alert if there's a duplicate entry error
+            console.log(res.data.error); // Access the error message
+            alert(res.data.error);
         } else {
             alert(res.data.message); // Show success message if the form is submitted successfully
             setSubmitted(true);
         }
-      })
+    
+
+      }) 
       .catch((err)=>{
       console.log(err);
       })
