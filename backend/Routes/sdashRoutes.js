@@ -1,21 +1,39 @@
-const express=require('express');
-const router=express.Router();
-const users=require('../Model/studentDash');
+const express = require('express');
+const router = express.Router();
+const users = require('../Model/studentDash');
+
 router.use(express.json());
 
-//to post data to form
-
-router.post('/add',async(req,res)=>{
+router.post('/add', async (req, res) => {
     try {
-        const post=req.body;
-        const sdata=await users(post).save()
-        console.log(sdata)
-        res.status(200).send({message:"Exit form submitted"});
-        
-        } catch (error) {
-        console.log(error)
-        
+        // Extract fields from request body
+        const { name, phone, email, dob, batch, gender } = req.body;
+        const existingUser = await users.findOne({name,email }); 
+
+        // If a similar entry exists, prevent duplicates
+        if (existingUser) {
+         
+            return res.status(404).json({ error: 'Duplicate entry: A user with this email already exists.' });
+        }
+
+        // Create a new document using Mongoose model
+        const newStudent = new users({
+            name,
+            phone,
+            email,
+            dob,
+            batch,
+            gender
+        });
+
+        // Save the document to the database
+        const savedStudent = await newStudent.save();
+        console.log(savedStudent);
+        res.status(200).send({ message: "Exit form submitted" });
+    } catch (error) {
+        console.error(error);
+        res.status(500).send({ error: "An error occurred while saving data" });
     }
-    
-})
-module.exports=router;
+});
+
+module.exports = router;

@@ -13,6 +13,7 @@ const app = new express();
 const PORT = process.env.PORT ;
 app.use(morgan('dev'));
 app.use(cors())
+app.use('/api',studentlogRouter)
 app.use('/api',adminlogRouter)
 
 

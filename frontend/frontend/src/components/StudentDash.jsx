@@ -20,6 +20,7 @@ const [batch, setBatch] = useState("N/A");
     // handle change for dropdown
     const handleChange = (e) => {
         setBatch(e.target.value);
+        setUsers({...users, batch: e.target.value});
     };
 
 
@@ -40,9 +41,13 @@ const [batch, setBatch] = useState("N/A");
       .then((res)=>{
       
         console.log(res);
-        alert(res.data.message);
-        setSubmitted(true);
-       
+    if (res.data.error) {
+            console.log(res.data)
+            alert("duplicate entry"); // Show alert if there's a duplicate entry error
+        } else {
+            alert(res.data.message); // Show success message if the form is submitted successfully
+            setSubmitted(true);
+        }
       })
       .catch((err)=>{
       console.log(err);

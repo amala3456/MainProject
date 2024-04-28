@@ -3,7 +3,7 @@ const schema=mongoose.Schema({
     name:String,
     phone:Number,
     email:String,
-    dob:String,
+    dob:Date,
     batch:String,
     gender:String
   
