@@ -7,8 +7,10 @@ const Sdsa = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get('http://localhost:3005/api/students'); // Changed to GET request
-        setUsers(response.data);
+        const response = await axios.get('http://localhost:3005/api/students');
+        // Filter users belonging to "KKEM March DSA" batch
+        const filteredUsers = response.data.filter(user => user.batch === 'KKEM March DSA');
+        setUsers(filteredUsers);
       } catch (error) {
         console.error('Error fetching users:', error);
       }
@@ -23,7 +25,7 @@ const Sdsa = () => {
       <table>
         <thead>
           <tr>
-            <th>Name</th><br/>
+            <th>Name</th>
             <th>Email</th>
           </tr>
         </thead>
