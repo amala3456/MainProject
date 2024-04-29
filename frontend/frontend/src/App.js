@@ -13,6 +13,7 @@ import Smlai from './components/Smlai';
 import Sfsd from './components/Sfsd';
 import Sdsa from './components/Sdsa';
 
+
 function App() {
   return (
     <div className="App">
@@ -20,9 +21,10 @@ function App() {
       <Routes>
       <Route path={'/'} element={<Main child={<Home/>}/>} />
 
-      <Route path={'/sdash'} element={<StudentDash/>}/>
+   
        <Route path='/adminlog' element={<Main child={<AdminLogin/>}/>} />
        <Route path={'/studentlog'} element={<Main child={<StudentLogin/>}/>} />
+       <Route path='/sdash' element={<Main child={<StudentDash/>}/>} />
        <Route path={'/admindash'} element={<Main child={<AdminDash/>}/>} />
 
 {/* student details */}

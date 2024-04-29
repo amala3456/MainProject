@@ -1,272 +1,45 @@
-import React from 'react';
-import { Button, Typography } from '@mui/material';
-import EmailIcon from '@mui/icons-material/Email';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
-const Smlai = () => {
+const Sdsa = () => {
+  const [users, setUsers] = useState([]);
+
+  useEffect(() => {
+    const fetchUsers = async () => {
+      try {
+        const response = await axios.get('http://localhost:3005/api/students');
+        // Filter users belonging to "KKEM March MLAI" batch
+        const filteredUsers = response.data.filter(user => user.batch === 'KKEM March MLAI');
+        setUsers(filteredUsers);
+      } catch (error) {
+        console.error('Error fetching users:', error);
+      }
+    };
+
+    fetchUsers();
+  }, []);
+
   return (
     <div>
-    <div>
-      <div style={{ padding: "50px" }}>
-        <Typography variant="h4" style={{ fontSize: "700", marginBottom: "40px", fontFamily: "Arial, sans-serif" }}>KKEM March MLAI</Typography>
-        <table className="table align-middle mb-0 bg-white" >
-          <thead className="bg-light">
-            <tr>
-              <th style={{ width: "46.5%" }}>Name</th>
-              <th style={{ width: "9%" }}>E-Mail</th>
-              <th style={{ width: "100px" }}>Actions</th>
+      <h2>User Table</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          {users.map((user, index) => (
+            <tr key={index}>
+              <td>{user.name}</td>
+              <td>{user.email}</td>
             </tr>
-          </thead>
-          <tbody>
-
-            <tr>
-              <td style={{padding:"15px"}}>
-                <div className="d-flex align-items-center justify-content-center" style={{ width: "570px" }}>
-                  <img
-                    src="https://mdbootstrap.com/img/new/avatars/8.jpg"
-                    alt=""
-                    style={{ width: "45px", height: "45px" }}
-                    className="rounded-circle"
-                  />
-                  <div className="ms-3" style={{ textAlign: "center", width: "46.5%" }}>
-                    <p className="fw-bold mb-0">John Doe</p>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <p className="mb-0" style={{ width: "100px" ,textAlign: "center"}}>john.doe@gmail.com</p>
-              </td>
-              <td style={{ textAlign: "center" }}>
-                <a href="" style={{ textDecoration: "none" }}>
-                  <EmailIcon color="primary" />
-                </a>
-              </td>
-            </tr>
-
-            <tr>
-              <td style={{padding:"15px"}}>
-                <div className="d-flex align-items-center justify-content-center" style={{ width: "570px" }}>
-                  <img
-                    src="https://mdbootstrap.com/img/new/avatars/8.jpg"
-                    alt=""
-                    style={{ width: "45px", height: "45px" }}
-                    className="rounded-circle"
-                  />
-                  <div className="ms-3" style={{ textAlign: "center", width: "46.5%" }}>
-                    <p className="fw-bold mb-0">John Doe</p>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <p className="mb-0" style={{ width: "100px" ,textAlign: "center"}}>john.doe@gmail.com</p>
-              </td>
-              <td style={{ textAlign: "center" }}>
-                <a href="" style={{ textDecoration: "none" }}>
-                  <EmailIcon color="primary" />
-                </a>
-              </td>
-            </tr>
-
-            <tr>
-              <td style={{padding:"15px"}}>
-                <div className="d-flex align-items-center justify-content-center" style={{ width: "570px" }}>
-                  <img
-                    src="https://mdbootstrap.com/img/new/avatars/8.jpg"
-                    alt=""
-                    style={{ width: "45px", height: "45px" }}
-                    className="rounded-circle"
-                  />
-                  <div className="ms-3" style={{ textAlign: "center", width: "46.5%" }}>
-                    <p className="fw-bold mb-0">John Doe</p>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <p className="mb-0" style={{ width: "100px" ,textAlign: "center"}}>john.doe@gmail.com</p>
-              </td>
-              <td style={{ textAlign: "center" }}>
-                <a href="" style={{ textDecoration: "none" }}>
-                  <EmailIcon color="primary" />
-                </a>
-              </td>
-            </tr>
-
-            <tr>
-              <td style={{padding:"15px"}}>
-                <div className="d-flex align-items-center justify-content-center" style={{ width: "570px" }}>
-                  <img
-                    src="https://mdbootstrap.com/img/new/avatars/8.jpg"
-                    alt=""
-                    style={{ width: "45px", height: "45px" }}
-                    className="rounded-circle"
-                  />
-                  <div className="ms-3" style={{ textAlign: "center", width: "46.5%" }}>
-                    <p className="fw-bold mb-0">John Doe</p>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <p className="mb-0" style={{ width: "100px" ,textAlign: "center"}}>john.doe@gmail.com</p>
-              </td>
-              <td style={{ textAlign: "center" }}>
-                <a href="" style={{ textDecoration: "none" }}>
-                  <EmailIcon color="primary" />
-                </a>
-              </td>
-            </tr>
-
-            <tr>
-              <td style={{padding:"15px"}}>
-                <div className="d-flex align-items-center justify-content-center" style={{ width: "570px" }}>
-                  <img
-                    src="https://mdbootstrap.com/img/new/avatars/8.jpg"
-                    alt=""
-                    style={{ width: "45px", height: "45px" }}
-                    className="rounded-circle"
-                  />
-                  <div className="ms-3" style={{ textAlign: "center", width: "46.5%" }}>
-                    <p className="fw-bold mb-0">John Doe</p>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <p className="mb-0" style={{ width: "100px" ,textAlign: "center"}}>john.doe@gmail.com</p>
-              </td>
-              <td style={{ textAlign: "center" }}>
-                <a href="" style={{ textDecoration: "none" }}>
-                  <EmailIcon color="primary" />
-                </a>
-              </td>
-            </tr>
-
-            <tr>
-              <td style={{padding:"15px"}}>
-                <div className="d-flex align-items-center justify-content-center" style={{ width: "570px" }}>
-                  <img
-                    src="https://mdbootstrap.com/img/new/avatars/8.jpg"
-                    alt=""
-                    style={{ width: "45px", height: "45px" }}
-                    className="rounded-circle"
-                  />
-                  <div className="ms-3" style={{ textAlign: "center", width: "46.5%" }}>
-                    <p className="fw-bold mb-0">John Doe</p>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <p className="mb-0" style={{ width: "100px" ,textAlign: "center"}}>john.doe@gmail.com</p>
-              </td>
-              <td style={{ textAlign: "center" }}>
-                <a href="" style={{ textDecoration: "none" }}>
-                  <EmailIcon color="primary" />
-                </a>
-              </td>
-            </tr>
-
-            <tr>
-              <td style={{padding:"15px"}}>
-                <div className="d-flex align-items-center justify-content-center" style={{ width: "570px" }}>
-                  <img
-                    src="https://mdbootstrap.com/img/new/avatars/8.jpg"
-                    alt=""
-                    style={{ width: "45px", height: "45px" }}
-                    className="rounded-circle"
-                  />
-                  <div className="ms-3" style={{ textAlign: "center", width: "46.5%" }}>
-                    <p className="fw-bold mb-0">John Doe</p>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <p className="mb-0" style={{ width: "100px" ,textAlign: "center"}}>john.doe@gmail.com</p>
-              </td>
-              <td style={{ textAlign: "center" }}>
-                <a href="" style={{ textDecoration: "none" }}>
-                  <EmailIcon color="primary" />
-                </a>
-              </td>
-            </tr>
-
-            <tr>
-              <td style={{padding:"15px"}}>
-                <div className="d-flex align-items-center justify-content-center" style={{ width: "570px" }}>
-                  <img
-                    src="https://mdbootstrap.com/img/new/avatars/8.jpg"
-                    alt=""
-                    style={{ width: "45px", height: "45px" }}
-                    className="rounded-circle"
-                  />
-                  <div className="ms-3" style={{ textAlign: "center", width: "46.5%" }}>
-                    <p className="fw-bold mb-0">John Doe</p>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <p className="mb-0" style={{ width: "100px" ,textAlign: "center"}}>john.doe@gmail.com</p>
-              </td>
-              <td style={{ textAlign: "center" }}>
-                <a href="" style={{ textDecoration: "none" }}>
-                  <EmailIcon color="primary" />
-                </a>
-              </td>
-            </tr>
-
-            <tr>
-              <td style={{padding:"15px"}}>
-                <div className="d-flex align-items-center justify-content-center" style={{ width: "570px" }}>
-                  <img
-                    src="https://mdbootstrap.com/img/new/avatars/8.jpg"
-                    alt=""
-                    style={{ width: "45px", height: "45px" }}
-                    className="rounded-circle"
-                  />
-                  <div className="ms-3" style={{ textAlign: "center", width: "46.5%" }}>
-                    <p className="fw-bold mb-0">John Doe</p>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <p className="mb-0" style={{ width: "100px" ,textAlign: "center"}}>john.doe@gmail.com</p>
-              </td>
-              <td style={{ textAlign: "center" }}>
-                <a href="" style={{ textDecoration: "none" }}>
-                  <EmailIcon color="primary" />
-                </a>
-              </td>
-            </tr>
-
-            <tr>
-              <td style={{padding:"15px"}}>
-                <div className="d-flex align-items-center justify-content-center" style={{ width: "570px" }}>
-                  <img
-                    src="https://mdbootstrap.com/img/new/avatars/8.jpg"
-                    alt=""
-                    style={{ width: "45px", height: "45px" }}
-                    className="rounded-circle"
-                  />
-                  <div className="ms-3" style={{ textAlign: "center", width: "46.5%" }}>
-                    <p className="fw-bold mb-0">John Doe</p>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <p className="mb-0" style={{ width: "100px" ,textAlign: "center"}}>john.doe@gmail.com</p>
-              </td>
-              <td style={{ textAlign: "center" }}>
-                <a href="" style={{ textDecoration: "none" }}>
-                  <EmailIcon color="primary" />
-                </a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <Button variant='contained' color="inherit" style={{ borderRadius: "18px", marginRight: '20px', backgroundColor: '#00463a',marginBottom:"40px" }}>
-              <Link to={"/admindash"} style={{ textDecoration: "none", color: 'white' }}>Go Back</Link>
-            </Button>
+          ))}
+        </tbody>
+      </table>
     </div>
-  </div>
-  )
-}
+  );
+};
 
-export default Smlai
+export default Sdsa;
