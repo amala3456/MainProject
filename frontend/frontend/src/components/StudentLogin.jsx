@@ -1,21 +1,16 @@
+
 import React, { useState } from 'react';
-import {
-  MDBContainer,
-  MDBCol,
-  MDBRow,
-  MDBBtn,
-  MDBIcon,
-  MDBInput,
-  MDBCheckbox
-} from 'mdb-react-ui-kit';
-import { Link, useNavigate } from 'react-router-dom';
+import Typography from '@mui/material/Typography';
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
+import { Link, useNavigate } from 'react-router-dom'; // Import useNavigate
+import loginImage from '../images/login.png';
 import axios from 'axios';
-// import loginImage from '../images/login.png';
-// import '../css/StudentLogin.css';
+import '../css/StudentLogin.css'; // Import your CSS file
 
 const StudentLogin = () => {
   const [student, setStudent] = useState({ email: '', password: '' });
-  const navigate = useNavigate();
+  const navigate = useNavigate(); // Initialize useNavigate hook
 
   const inputHandler = (e) => {
     setStudent({ ...student, [e.target.name]: e.target.value });
@@ -26,7 +21,7 @@ const StudentLogin = () => {
       .then((res) => {
         if (res.status === 200) {
           alert(res.data.message);
-          navigate('/sdash');
+          navigate('/sdash'); // Navigate to student dashboard upon successful login
         } else {
           throw new Error('Login failed');
         }
@@ -38,45 +33,44 @@ const StudentLogin = () => {
   };
 
   return (
-    <MDBContainer fluid className="p-3 my-5">
-
-      <MDBRow>
-
-        <MDBCol col='10' md='6'>
-          <img src="https://assets.materialup.com/uploads/14207bb1-f879-44a5-b833-54d28cfdf869/preview.gif" className="img-fluid" alt="Login" />
-        </MDBCol>
-        {/* https://image.freepik.com/free-vector/login-concept-illustration_114360-739.jpg */}
-        <MDBCol col='4' md='6'>
-
-          <MDBInput wrapperClass='mb-4' label='Email address' id='email' type='email' size="lg" name="email" onChange={inputHandler} value={student.email} />
-          <MDBInput wrapperClass='mb-4' label='Password' id='password' type='password' size="lg" name="password" onChange={inputHandler} value={student.password} />
-
-          <div className="d-flex justify-content-between mx-4 mb-4">
-            <MDBCheckbox name='flexCheck' value='' id='flexCheckDefault' label='Remember me' />
-            <Link to="#">Forgot password?</Link>
-          </div>
-
-          <MDBBtn className="mb-4 w-100" size="lg" onClick={loginHandler}>Sign in</MDBBtn>
-
-          <div className="divider d-flex align-items-center my-4">
-            <p className="text-center fw-bold mx-3 mb-0">OR</p>
-          </div>
-
-          <MDBBtn className="mb-4 w-100" size="lg" style={{ backgroundColor: '#3b5998' }}>
-            <MDBIcon fab icon="facebook-f" className="mx-2" />
-            Continue with Facebook
-          </MDBBtn>
-
-          <MDBBtn className="mb-4 w-100" size="lg" style={{ backgroundColor: '#55acee' }}>
-            <MDBIcon fab icon="twitter" className="mx-2" />
-            Continue with Twitter
-          </MDBBtn>
-
-        </MDBCol>
-
-      </MDBRow>
-
-    </MDBContainer>
+    <div className='studentlog'>
+      <div className='login-form'>
+        <br />
+        <img src={loginImage} alt="" className='logimage' />
+        <Typography variant="h5" gutterBottom style={{ color: '#006D5B', fontFamily: 'TimesNewRoman' }}>
+          Student Login
+        </Typography>
+        <br />
+        <TextField
+          id="email"
+          label="Email"
+          variant="outlined"
+          name="email"
+          onChange={inputHandler}
+          value={student.email}
+          className='input'
+        />
+        <br /><br />
+        <TextField
+          id="password"
+          label="Password"
+          variant="outlined"
+          type="password"
+          name="password"
+          onChange={inputHandler}
+          value={student.password}
+          className='input'
+        />
+        <br /><br />
+        <Button variant="contained" 
+        style={{width:'45%',borderRadius:'50px',backgroundColor:'#006D5B'}}
+        onClick={loginHandler}>Login</Button>
+        <br />
+        <Typography style={{fontFamily:'TimesNewRoman'}}>
+          Not a student? <Link to="/adminlog" style={{textDecoration:'none',color:'#006D5B',fontFamily:'TimesNewRoman'}}>Admin Login</Link>
+        </Typography>
+      </div>
+    </div>
   );
 };
 

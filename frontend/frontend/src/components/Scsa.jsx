@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const Sdsa = () => {
+const Scsa = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
@@ -42,4 +42,4 @@ const Sdsa = () => {
   );
 };
 
-export default Sdsa;
+export default Scsa;
