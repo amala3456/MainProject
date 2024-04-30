@@ -21,7 +21,7 @@ const Scsa = () => {
 
   return (
     <div>
-      <h2>User Table</h2>
+      <h2>KKEM MARCH CSA</h2>
       <table>
         <thead>
           <tr>
