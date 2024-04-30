@@ -215,63 +215,55 @@ Learn how to use the MERN stack, a JavaScript/JSON-based three-tier architecture
 
 </div>
 {/* carousel */}
-<div style={{ border: "1px solid white", backgroundColor: "#A5CFE3", backgroundSize: 'contain', textAlign: 'center', padding: '80px ' }}>
-  <Typography style={{margin:"0 0 0px 0",fontSize:"40px"}}>Courses</Typography>
+<div style={{ border: "1px solid white", backgroundColor: "#A5CFE3", backgroundSize: 'contain', textAlign: 'center', padding: '60px ' }}>
+  <Typography style={{margin:"0 0 50px 0",fontSize:"40px"}}>Our Courses</Typography>
 <div id="carouselExampleCaptions" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button  type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
 
-  </div >
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="https://yourengineer.in/wp-content/uploads/2021/07/PD-Leverage-MERN-Stack-for-building-efficient-websites-Thumbnail.png" class="d-block w-80 mx-auto" style={{width:"48%"}} alt="..."/>
-      <div class="carousel-caption d-none d-md-block">
-        <h5>MERN  Stack</h5>
+      <img src="https://yourengineer.in/wp-content/uploads/2021/07/PD-Leverage-MERN-Stack-for-building-efficient-websites-Thumbnail.png" class="d-block w-80 mx-auto" style={{width:"48%", borderRadius:"25px"}} alt="..."/>
+      <div class="d-none d-md-block" style={{marginTop:"45px",fontSize:"25px",color:" #21292d"}}>
+        <h2>MERN  Stack</h2>
         <p>Some representative placeholder content for the first slide.</p>
       </div>
     </div>
 
     <div class="carousel-item">
-      <img src="https://image.freepik.com/free-vector/cyber-security-illustration-concept-with-people_23-2148530634.jpg" class="d-block w-80 mx-auto" style={{ width: '50%' }} alt="..."/>
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Cyber Security</h5>
+      <img src="https://image.freepik.com/free-vector/cyber-security-illustration-concept-with-people_23-2148530634.jpg" class="d-block w-80 mx-auto" style={{ width: '50%', borderRadius:"25px" }} alt="..."/>
+      <div class="d-none d-md-block" style={{marginTop:"45px",fontSize:"25px",color:" #21292d"}}>
+        <h2>Cyber Security</h2>
         <p>Some representative placeholder content for the second slide.</p>
       </div>
     </div>
 
     <div class="carousel-item">
-      <img src="https://wallpaperbat.com/img/392227-what-is-data-science-dataquest.jpg" class="d-block w-80 mx-auto" style={{ width: '59%' }} alt="..."/>
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Data Science</h5>
+      <img src="https://wallpaperbat.com/img/392227-what-is-data-science-dataquest.jpg" class="d-block w-80 mx-auto" style={{ width: '59%', borderRadius:"25px" }} alt="..."/>
+      <div class="d-none d-md-block" style={{marginTop:"45px",fontSize:"25px",color:" #21292d"}}>
+        <h2>Data Science</h2>
         <p>Some representative placeholder content for the third slide.</p>
       </div>
     </div>
     
     <div class="carousel-item">
-      <img src="https://p.kindpng.com/picc/s/13-132027_-net-framework-hd-png-download.png" class="d-block w-80 mx-auto" style={{ width: '45%' }} alt="..."/>
-      <div class="carousel-caption d-none d-md-block">
-        <h5>.NET Devoloper</h5>
+      <img src="https://p.kindpng.com/picc/s/13-132027_-net-framework-hd-png-download.png" class="d-block w-80 mx-auto" style={{ width: '45%', borderRadius:"25px" }} alt="..."/>
+      <div class="d-none d-md-block" style={{marginTop:"45px",fontSize:"25px",color:" #21292d"}}>
+        <h2>.NET Devoloper</h2>
         <p>Some representative placeholder content for the 4thslide.</p>
       </div>
     </div>
     
     <div class="carousel-item">
-      <img src="http://blog.mymeanstackdeveloper.com/wp-content/uploads/2018/08/Mean-Stack-Development.png" class="d-block w-80 mx-auto" style={{ width: '53.5%' }} alt="..."/>
-      <div class="carousel-caption d-none d-md-block">
-        <h5>MEAN Stack</h5>
+      <img src="http://blog.mymeanstackdeveloper.com/wp-content/uploads/2018/08/Mean-Stack-Development.png" class="d-block w-80 mx-auto" style={{ width: '53.5%', borderRadius:"25px" }} alt="..."/>
+      <div class="d-none d-md-block" style={{marginTop:"45px",fontSize:"25px",color:" #21292d"}}>
+        <h2>MEAN Stack</h2>
         <p>Some representative placeholder content for the 4thslide.</p>
       </div>
     </div>
 
     <div class="carousel-item">
-      <img src="https://img.graphicsurf.com/2020/10/software-testing-vector-free-illustration.jpg" class="d-block w-80 mx-auto" style={{ width: '50%' }} alt="..."/>
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Software Testing</h5>
+      <img src="https://img.graphicsurf.com/2020/10/software-testing-vector-free-illustration.jpg" class="d-block w-80 mx-auto" style={{ width: '50%', borderRadius:"25px" }} alt="..."/>
+      <div class="d-none d-md-block" style={{marginTop:"45px",fontSize:"25px",color:" #21292d"}}>
+        <h2>Software Testing</h2>
         <p>Some representative placeholder content for the 4thslide.</p>
       </div>
     </div>
@@ -288,39 +280,34 @@ Learn how to use the MERN stack, a JavaScript/JSON-based three-tier architecture
 </div>
 </div>
 {/* video links */}
-<div style={{ border: "1px solid white", backgroundColor: "#E7F6FC", backgroundSize: '100%', textAlign: 'center', padding: '50px ' }}>
-<MDBFooter className='text-center text-white' style={{ backgroundColor: '#45637d' }}>
-      <MDBContainer className='p-4'>
-        <section className=''>
-          <MDBRow className='d-flex justify-content-center'>
-            <MDBCol lg='6'>
-            <Typography style={{margin: "10px 800px 20px 0px",fontSize:"40px",fontFamily:"sors,sans-seriff"}}>More About Us</Typography>
-              <div className='ratio ratio-16x9'>
-                <iframe
-                  className='shadow-1-strong rounded'
-                  src='https://www.youtube.com/embed/fQ8MWl2jji8?feature=shared'
-                  title='YouTube video'
-                  allowFullScreen
-                  data-gtm-yt-inspected-2340190_699='true'
-                  id='388567449'
-                ></iframe>
-              </div>
-              
-            </MDBCol>
-          </MDBRow>
-        </section>
-      </MDBContainer>
-
-      {/* <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-        All Rights Resesrved © 2020
-        <a className='text-white' href='https://mdbootstrap.com/'>
-        &nbsp;ICTAK
-        </a>
-      </div> */}
-    </MDBFooter>
+<div style={{backgroundColor: "white", backgroundSize: '100%', textAlign: 'center', padding: '40px ' }}>
+  <MDBFooter className='text-center text-white' style={{ margin:"40px",backgroundColor: '#45637d', borderRadius:"5px" }}>
+    <MDBContainer className='p-4'>
+      <section>
+        <MDBRow className='d-flex justify-content-center'>
+          <MDBCol lg='6' style={{ borderRight: '1px solid white' }}>
+            <Typography style={{ margin: "130px 0 20px 0", fontSize:"40px", fontFamily:"sans-seriff", color: "white" }}>More About Us</Typography>
+          </MDBCol>
+          <MDBCol lg='6' style={{ borderLeft: '1px solid red',padding:"20px" }}>
+            <div className='ratio ratio-16x9'>
+              <iframe
+                className='shadow-1-strong rounded'
+                src='https://www.youtube.com/embed/fQ8MWl2jji8?feature=shared'
+                title='YouTube video'
+                allowFullScreen
+                data-gtm-yt-inspected-2340190_699='true'
+                id='388567449'
+              ></iframe>
+            </div>
+          </MDBCol>
+        </MDBRow>
+      </section>
+    </MDBContainer>
+  </MDBFooter>
 </div>
+
 {/* footer */}
-<footer style={{ border: "1px solid white", backgroundColor: '#bbfff4', padding: '50px', margin: "0px", textAlign: 'center' }}>
+<footer style={{ border: "1px solid white", backgroundColor: 'white', padding: '50px', margin: "0px", textAlign: 'center' }}>
 <MDBFooter bgColor='light' className='text-center text-lg-start text-muted'>
       <section className='d-flex justify-content-center justify-content-lg-b#etween p-4 border-bottom'>
         <div className='me-5 d-none d-lg-block'>
@@ -508,3 +495,20 @@ export default Home;
 
 {/* <Typography variant="body1">&copy; 2024 ICTAK Exam Registration Portal</Typography> */}
 
+  {/* <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button  type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+
+  </div > */}
+
+  
+      {/* <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
+        All Rights Resesrved © 2020
+        <a className='text-white' href=''>
+        &nbsp;ICTAK
+        </a>
+      </div> */}
