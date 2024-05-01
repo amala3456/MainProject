@@ -1,5 +1,3 @@
-
-
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Typography} from '@mui/material';
@@ -108,13 +106,7 @@ function Sdsa() {
         </Table>
       </TableContainer>
       <div>
-      <Button
-          component={Link}
-          to="/sdsa"
-          variant="contained"
-          style={{ width: "50%", borderRadius: "11px", backgroundColor: '#009B81', color: 'white', marginTop: '10px', alignSelf: 'center' }}>
-          Upload Results
-        </Button>
+<br /><br /><br /><br />
         <div>
           {/* code for upload */}
       < input type="file" onChange={(e) => setFile(e.target.files[0])}/>

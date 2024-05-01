@@ -3,7 +3,6 @@ const cors = require('cors')
 const multer = require('multer')
 const router = express.Router();
 
-
 router.use(cors())
 router.use(express.json())
 
