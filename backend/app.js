@@ -10,6 +10,7 @@ const adminlogDb = require('./Db/adminlogDb');
 const sdashDb=require('./Db/sdashDb');
 const sdashRouter=require('./Routes/sdashRoutes');
 const adminRouter=require('./Routes/admindashRoutes');
+const email=require('./Routes/email');
 const app = new express();
 const PORT = process.env.PORT ;
 app.use(morgan('dev'));
@@ -17,18 +18,9 @@ app.use(cors())
 app.use('/api',studentlogRouter)
 app.use('/api',adminlogRouter)
 app.use('/api',adminRouter)
-
-
-
-// const studentlogRouter = require('./Routes/studentlogRoutes');
-// const studentlogDb = require('./Db/studentlogDb');
-// const sdashDb=require('./Db/sdashDb');
-// const sdashRouter=require('./Routes/sdashRoutes');
-// app.use(cors());
-
-
+//for email
+app.use('/api',email)
 app.use('/api',sdashRouter)
-
 
 app.listen(PORT,()=>{
     console.log(`Server is up and running on port ${PORT}`);

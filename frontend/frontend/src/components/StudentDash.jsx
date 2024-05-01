@@ -35,26 +35,22 @@ const [batch, setBatch] = useState("N/A");
         // console.log(users);
     }
 
-    const addHandler=()=>{
-        console.log("clicked",users)
-      axios.post("http://localhost:3005/api/add",users)
-      .then((res)=>{
-
-    if (res.data.error) {
-            console.log(res.data)
-            console.log(res.data.error); // Access the error message
-            alert(res.data.error);
-        } else {
-            alert(res.data.message); // Show success message if the form is submitted successfully
-            setSubmitted(true);
-        }
+    const addHandler = () => {
+        axios.post("http://localhost:3005/api/add", users)
+            .then((res) => {
+                if (res.data.error) {
+                    alert(res.data.error); // Show error message if the form submission fails
+                } else {
+                    alert(res.data.message); // Show success message if the form is submitted successfully
+                    setSubmitted(true);
+                }
+            })
+            .catch((err) => {
+                console.error("Error adding user:", err);
+                alert("Duplicate user"); // Show a generic error message for any unexpected errors
+            });
+    };
     
-
-      }) 
-      .catch((err)=>{
-      console.log(err);
-      })
-      }
 
 
     return (
@@ -143,3 +139,7 @@ const [batch, setBatch] = useState("N/A");
 
 
 export default StudentDash
+
+
+
+
