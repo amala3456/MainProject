@@ -32,6 +32,7 @@ const AdminDash = () => {
           style={{ width: "50%", borderRadius: "11px", backgroundColor: '#009B81', color: 'white', marginTop: '10px', alignSelf: 'center' }}>
           Details
         </Button>
+       
       </div>
     </div>
   </div>
@@ -59,7 +60,8 @@ const AdminDash = () => {
         >
           Details
         </Button>
-      </div>
+        
+        </div>
      </div>
           </div>
         </div>
@@ -84,6 +86,7 @@ const AdminDash = () => {
         >
           Details
         </Button>
+       
       </div>
      </div>
           </div>
@@ -111,6 +114,7 @@ const AdminDash = () => {
         >
           Details
         </Button>
+        
       </div>
      </div>
           </div>
@@ -138,6 +142,7 @@ const AdminDash = () => {
         >
           Details
         </Button>
+        
       </div>
      </div>
           </div>
@@ -165,6 +170,7 @@ const AdminDash = () => {
         >
           Details
         </Button>
+        
       </div>
      </div>
           </div>

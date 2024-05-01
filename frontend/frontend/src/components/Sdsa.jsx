@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Typography } from '@mui/material';
+import { Typography} from '@mui/material';
 import { styled } from '@mui/material/styles';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -12,6 +12,9 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import EmailIcon from '@mui/icons-material/Email';
+import {Button} from '@mui/material';
+import { Link } from 'react-router-dom';
+
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -38,6 +41,15 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 
 function Sdsa() {
   const [users, setUsers] = useState([]);
+  const [file, setFile] = useState();
+    const upload = () => {
+    const formData = new FormData()
+    formData.append('file', file)
+    axios.post('http://localhost:3005/api/upload',formData )
+    .then( res => {})
+    .catch(er => console.log(er))
+  }
+
 
   useEffect(() => {
     const fetchUsers = async () => {
@@ -95,7 +107,22 @@ function Sdsa() {
           </TableBody>
         </Table>
       </TableContainer>
+      <div>
+      <Button
+          component={Link}
+          to="/sdsa"
+          variant="contained"
+          style={{ width: "50%", borderRadius: "11px", backgroundColor: '#009B81', color: 'white', marginTop: '10px', alignSelf: 'center' }}>
+          Upload Results
+        </Button>
+        <div>
+          {/* code for upload */}
+      < input type="file" onChange={(e) => setFile(e.target.files[0])}/>
+      <button type="button" onClick={upload}>Upload</button>
     </div>
+        </div>
+    </div>
+   
   );
 };
 

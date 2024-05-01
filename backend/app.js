@@ -11,6 +11,7 @@ const sdashDb=require('./Db/sdashDb');
 const sdashRouter=require('./Routes/sdashRoutes');
 const adminRouter=require('./Routes/admindashRoutes');
 const email=require('./Routes/email');
+const upload=require('./Routes/upload');
 const app = new express();
 const PORT = process.env.PORT ;
 app.use(morgan('dev'));
@@ -21,6 +22,7 @@ app.use('/api',adminRouter)
 //for email
 app.use('/api',email)
 app.use('/api',sdashRouter)
+app.use('/api',upload)
 
 app.listen(PORT,()=>{
     console.log(`Server is up and running on port ${PORT}`);
