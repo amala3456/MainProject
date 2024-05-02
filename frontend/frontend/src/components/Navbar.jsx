@@ -68,9 +68,11 @@ const Navbar = () => {
               <Link to={""} style={{ textDecoration: "none", color: 'white' }}>ABOUT US</Link>
             </Button>
             <Button variant='contained' color="inherit" style={{ borderRadius: "18px", marginRight: '20px', backgroundColor: '#00463a' }}>
-              <Link to={"/"} style={{ textDecoration: "none", color: 'white' }}>CONTACT US</Link>
+              <Link to={""} style={{ textDecoration: "none", color: 'white' }}>CONTACT US</Link>
             </Button>
-
+            <Button variant='contained' color="inherit" style={{ borderRadius: "18px", marginRight: '20px', backgroundColor: '#00463a' }}>
+              <Link to={"/"} style={{ textDecoration: "none", color: 'white' }}>LOGOUT</Link>
+            </Button>
           </>
         )}
       </Toolbar>

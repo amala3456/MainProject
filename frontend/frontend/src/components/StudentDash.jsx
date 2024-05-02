@@ -20,6 +20,7 @@ const [batch, setBatch] = useState("N/A");
     // handle change for dropdown
     const handleChange = (e) => {
         setBatch(e.target.value);
+        setUsers({...users, batch: e.target.value});
     };
 
 
@@ -38,12 +39,18 @@ const [batch, setBatch] = useState("N/A");
         console.log("clicked",users)
       axios.post("http://localhost:3005/api/add",users)
       .then((res)=>{
-      
-        console.log(res);
-        alert(res.data.message);
-        setSubmitted(true);
-       
-      })
+
+    if (res.data.error) {
+            console.log(res.data)
+            console.log(res.data.error); // Access the error message
+            alert(res.data.error);
+        } else {
+            alert(res.data.message); // Show success message if the form is submitted successfully
+            setSubmitted(true);
+        }
+    
+
+      }) 
       .catch((err)=>{
       console.log(err);
       })

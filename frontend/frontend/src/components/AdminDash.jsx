@@ -6,17 +6,17 @@ const AdminDash = () => {
   return (
 
 <div style={{padding:"30px"}}>
-      <Box style={{paddingBottom:"30px"}}>
-      <Typography sx={{fontWeight:"300",fontSize:"40px",fontFamily:"sora,sans-seriff"}}>BATCHES</Typography>
+      < Box style={{paddingBottom:"30px"}}>
+      <  Typography sx={{fontWeight:"300",fontSize:"40px",fontFamily:"sora,sans-seriff"}}>BATCHES</Typography>
       </Box>
       
 
       <div className="row">
 {/* here */}
 <div className="col-sm-6">
-  <div className="card mb-4" style={{ height: '206px',border: "1.6px solid black" }}> 
+  < div className="card mb-4" style={{height: '206px',border: "1.6px solid black" }}> 
     <div className="card" style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '10px', width: '100%', border: "0px" }}>
-      <div className="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light" style={{ height: '200%' }}>
+      <div className="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light" style={{height: '200%' }}>
         <img src="https://7wdata.be/wp-content/uploads/2016/05/data-scientist-venn-diagram1.jpg" className="img-fluid" alt="Nature" style={{ width: '95%' }} /> 
         <a href="#!">
           <div className="mask"></div>
