@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Typography} from '@mui/material';
+import { Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -10,9 +10,8 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import EmailIcon from '@mui/icons-material/Email';
-import {Button} from '@mui/material';
+import { Button } from '@mui/material';
 import { Link } from 'react-router-dom';
-
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -23,8 +22,8 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
   },
   [`&.${tableCellClasses.body}`]: {
     fontSize: 16,
-    padding: "9px", 
-    textAlign: 'center', 
+    padding: "9px",
+    textAlign: 'center',
   },
 }));
 
@@ -40,14 +39,20 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 function Sdsa() {
   const [users, setUsers] = useState([]);
   const [file, setFile] = useState();
-    const upload = () => {
+
+  const handleUpload = () => {
     const formData = new FormData()
     formData.append('file', file)
-    axios.post('http://localhost:3005/api/upload',formData )
-    .then( res => {})
-    .catch(er => console.log(er))
+    axios.post('http://localhost:3005/api/upload', formData)
+      .then(res => { 
+        alert('Successfully uploaded')
+        console.log(res.data)
+    })
+    .catch(error => { 
+      alert('No file Chosen')
+      console.log(error);
+    });
   }
-
 
   useEffect(() => {
     const fetchUsers = async () => {
@@ -106,18 +111,19 @@ function Sdsa() {
         </Table>
       </TableContainer>
       <div>
-<br /><br /><br /><br />
+        <br /><br /><br /><br />
         <div>
           {/* code for upload */}
-      < input type="file" onChange={(e) => setFile(e.target.files[0])}/>
-      <button type="button" onClick={upload}>Upload</button>
-    </div>
+          <input type="file" onChange={(e) => setFile(e.target.files[0])} />
+          {/* <button type="button" onClick={handleUpload}>Upload</button> */}
+          <Button variant="contained" color="success" onClick={handleUpload}>Upload</Button>
         </div>
+      </div>
     </div>
-   
   );
 };
 
 export default Sdsa;
+
 
 
