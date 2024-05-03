@@ -7,7 +7,8 @@
     background-size: cover;
     background-position: calc();
     background: url('../images/img2.png') no-repeat ;
-    margin-top: 40px;
+    margin-top: 10px;
+    background-size: 100vh;
 }
 
 .wrapper{
@@ -28,20 +29,23 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* margin-top: 10px; */
+    margin-top: 10px;
     margin-left: 500px;
 }
 
 .wrapper .form-box.adminlogin {
     left: 0;
-    background: #006058;
+    background: #048f8800;
+    background: transparent;
     padding: 0 40px;
-    background-image: linear-gradient(to top,rgba(65, 122, 3, 0.788),#006058) ;
+    background-image: linear-gradient(to top,rgba(21, 193, 98, 0.223),#06312d67) ;
 }
 
 .form-box h1 {
     font-size: 32px;
-    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #025043b6;
     text-align: center;
 }
 
@@ -50,21 +54,23 @@
     width: 100%;
     height: 50px;
     margin: 25px 0;
-    color: white;
+    /* color: white; */
 }
 
 .input-box input {
     width: 100%;
     height: 100%;
-    background: transparent;
+    background-color: #42b4603d;
     border: none;
-    outline: none;
-    border-bottom: 2px solid #fff;
+    outline-color: rgba(0, 238, 255, 0); 
+    border-radius: 20px;
+    /* border-bottom: 2px solid #08a2a2; */
     padding-right: 23px;
     font-size: 16px;
-    color: #0ef;
+    color: #025043b6;
     font-weight: 500;
     transition: .5s;
+    
 }
 
 .input-box input:focus,
@@ -78,7 +84,7 @@
     left: 0;
     transform: translateY(-50%);
     font-size: 16px;
-    color: #fff;
+    color: #ffffff;
     pointer-events: none;
     transition: .5s;
 }
@@ -100,25 +106,29 @@
 
 .input-box input:focus~i,
 .input-box input:valid~i {
-    color: #0ef;
+    color: black;
 }
 
 .btn {
     position: relative;
     width: 100%;
     height: 45px;
-    background:#006058 ;
-    border: 2px solid #0ef;
+    background: #fff;
+    border: none;
+    outline: none;
+    background-image: linear-gradient(to top,#025043b6,#28a99e) ;
+    /* background-image: teal; */
+    border-radius:100px;
     outline: none;
     cursor: pointer;
     font-size: 16px;
-    color: #fff;
+    color: black;
     font-weight: 600;
     z-index: 1;
     overflow: hidden;
 }
 
-.btn::before {
+/* .btn::before {
     content: '';
     position: absolute;
     top: 0;
@@ -132,5 +142,5 @@
 
 .btn:hover::before {
     top: 0;
-}
+} */
  

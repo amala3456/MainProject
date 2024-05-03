@@ -34,12 +34,13 @@ const AdminLogin = () => {
             <div className='wrapper'>
                 <div className='form-box adminlogin'>
                     <form>
-                        <h1>AdminLogin</h1>
+                        <h1 style={{fontFamily:'TimesNewRomen'}}>Admin Login</h1>
                         <div className="input-box">
                             <input
                                 type="text"
-                                placeholder='username'
+                                placeholder='Username'
                                 name='username'
+                                style={{border:'1px solid teal'}}
                                 onChange={inputHandler}
                                 value={admin.username}
                                 required
@@ -49,15 +50,19 @@ const AdminLogin = () => {
                         <div className="input-box">
                             <input
                                 type="password"
-                                placeholder='password'
+                                placeholder='Password'
                                 name='password'
+                                style={{border:'1px solid teal'}}
                                 onChange={inputHandler}
                                 value={admin.password}
                                 required
                             />
                             <i className='bx bxs-lock-alt'></i>
                         </div>
-                        <Button type="button" className='btn' onClick = { addHandler }>Login</Button>
+                      
+                        <Button type="button" style={{color:'white',borderRadius:'40px',width:'200px'}} className='btn' onClick = { addHandler }>Login</Button>
+                        <br />
+                        <h6 href='#'>Forgot Password?</h6>
                     </form>
                 </div>
             </div>
@@ -66,5 +71,6 @@ const AdminLogin = () => {
 };
 
 export default AdminLogin;
+
 
 

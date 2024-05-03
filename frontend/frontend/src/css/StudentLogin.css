@@ -2,25 +2,30 @@
 .studentlog {
   height: 100vh;
   /* background-image: linear-gradient(to top,commonTeal); */
+  background: url('../images/studentlog.jpeg') no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  background-size: 130vh;
 }
 
 
 .input {
   width: 60%;
-  padding: 5px;
+  padding: 2vh;
   background-color: transparent;
+  border-radius: 50px;
 }
 
 .login-form {
   border: 1px solid green;
-  width: 30%;
-  height: 70%;
-  background-image: linear-gradient(to top,rgba(34, 51, 0, 0.621),#00693d00) ;
+  width: 25%;
+  height: 60%;
+  border-radius: 10px;
+  margin-top:-70px;
+  margin-left: 1000px;
+  background-image: linear-gradient(to top,rgba(0, 128, 128, 0.571),white) ;
   box-shadow: 0 0 10px  rgb(38, 10, 3);
 }
 
