@@ -10,12 +10,8 @@ const adminlogDb = require('./Db/adminlogDb');
 const sdashDb=require('./Db/sdashDb');
 const sdashRouter=require('./Routes/sdashRoutes');
 const adminRouter=require('./Routes/admindashRoutes');
-<<<<<<< HEAD
 const email=require('./Routes/email');
 const upload=require('./Routes/upload');
-=======
-
->>>>>>> d0aa38887636619f0fc3a905ec4f115c9b669ed6
 const app = new express();
 const PORT = process.env.PORT ;
 

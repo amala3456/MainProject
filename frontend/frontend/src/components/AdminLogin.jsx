@@ -96,7 +96,7 @@ const AdminLogin = () => {
           .then((res) => {
             if (res.data.message === 'Login successful') {
               alert('Login successful');
-              navigate('/studentlog');
+              navigate('/admindash');
             } else {
               alert('Login failed');
             }

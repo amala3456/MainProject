@@ -2,11 +2,12 @@
 .studentlog {
   height: 100vh;
   /* background-image: linear-gradient(to top,commonTeal); */
+  background: url('../images/bgimg.jpg') no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  background-size: 210vh;
 }
 
 
@@ -20,6 +21,7 @@
   border: 1px solid green;
   width: 30%;
   height: 70%;
+  margin-left: 500px;
   background-image: linear-gradient(to top,rgba(34, 51, 0, 0.621),#00693d00) ;
   box-shadow: 0 0 10px  rgb(38, 10, 3);
 }
