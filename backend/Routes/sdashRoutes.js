@@ -13,6 +13,7 @@ router.post('/add', async (req, res) => {
         // If a similar entry exists, prevent duplicates
         if (existingUser) {
             console.log('Duplicate entry: A user with this email already exists.');
+       
             return res.status(400).json({ error: 'Duplicate entry: A user with this email already exists.' });
         }
 
