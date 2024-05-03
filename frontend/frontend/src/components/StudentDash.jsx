@@ -61,14 +61,16 @@ const StudentDash = () => {
 
     return (
 
-        <div className='page' style={{ height: '100vh' }}>
-          
+        <div className='page' style={{ height: '100vh', marginTop:'-40px'}}>
+        
     
+        <div className='form' style={{marginTop:'40px'}}>       
 
-
-            <Card className='teel' style={{ maxWidth: 450, margin: "40px auto", padding: "10px 10px" }}>
+            <Card className='teel' style={{ maxWidth: 450, margin: "40px auto", padding: "10px 10px",}}>
                 <CardContent>
                     < Typography gutterBottom variant='h4' style={{ padding: "4px auto", color: "white" }}>Exit Form</Typography>
+
+        
 
                     <form >
 
@@ -136,12 +138,13 @@ const StudentDash = () => {
 
                         </div>
                     </form>
-
+                  
 
                 </CardContent>
             </Card>
-        
         </div>
+        </div>
+        
 
     )
 }
