@@ -1,132 +1,3 @@
-/* .wrapper {
-    width: 420px;
-    background-image: linear-gradient(to top,rgba(34,51,0,0.466),#006058) ;
-    border: 10px solid rgb(255, 255, 255, .2);
-    backdrop-filter:blur(30px);
-    box-shadow: 0 0 10px rgb(0, 0, 0, .2);
-    color: #1bcdbe;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border-radius: 20px;
-    padding: 10px 20px;
-    border-color: aqua;
-    
-
-}
-
-.wrapper h1 {
-    font-size: 28px;
-    text-align: center;
-    font-weight: 600;
-}
-
-.wrapper .input-box {
-    position: relative;
-    width: 100%;
-    height: 50px;
-    background: none;
-    margin: 30px 0;
-    
-    
-}
-
-.input-box input {
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: 2px solid rgba(226, 227, 226, 0.605);
-    outline: none;
-    border-radius: 40px;
-    font-size: 16px;
-    color: #fff;
-    padding: 20px 45px 20px 20px;
-}
-
-.input-box input::placeholder {
-    color: #185063;
-}
-
-.input-box .icon {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 16px;
-}
-
-
-.wrapper .remember-forgot {
-    display: flex;
-    justify-content: space-between;
-    font-size: 14.5px;
-    margin: -15px 0 15px;
-}
-
-.remember-forgot label input {
-    accent-color: #fff;
-    margin-right: 4px;
-}
-
-.remember-forgot a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.remember-forgot a:hover {
-    text-decoration: underline;
-}
-
-.wrapper button {
-    width: 100%;
-    height: 45px;
-    background: #006058;
-    border: none;
-    outline: none;
-    border-radius: 40px;
-    box-shadow: 0 0 10px rgb(0, 0, 0, .1);
-    cursor: pointer;
-    font-size: 16px;
-    color: #fff;
-    font-weight: 700;
-    background-image: linear-gradient(to top,rgba(19, 32, 103, 0.466),#006058) ;
-}
-
-.wrapper {
-    display: flex;
-   background: transparent;
-  justify-content: center;
-  align-items: center;
-  min-height: 50vh;
-  background :#006058
-  no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: linear-gradient(to top,rgba(13, 155, 98, 0.466),#006058) ;
-  margin-left: 33%;
-  margin-top: 20%;
-}
-
-*{
-    margin:0;
-    padding: 0%;
-    box-sizing: border-box;
- }
-
-
- .bg {
-    background: url('../images/Admin\ Login\ Illustration.jpeg') no-repeat;
-    padding-left: 500px;
-    height: 10%;
- } */
-
-
-
-
-/* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:'poppins' sans-serif;
-} */
 
 .bg {
     display: flex;
@@ -140,6 +11,7 @@
 }
 
 .wrapper{
+    
     position: relative;
     width: 750px;
     height: 450px;
@@ -156,7 +28,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     margin-left: 500px;
 }
 
