@@ -5,14 +5,14 @@ const users = require('../Model/studentDash');
 router.use(express.json());
 
 router.post('/add', async (req, res) => {
-    try { 
+    try {
         // Extract fields from request body
         const { name, phone, email, dob, batch, gender } = req.body;
-        const existingUser = await users.findOne({name,email }); 
-
+        const existingUser = await users.findOne({ $or: [{ name }, { email }] });
         // If a similar entry exists, prevent duplicates
         if (existingUser) {
             console.log('Duplicate entry: A user with this email already exists.');
+
             return res.status(400).json({ error: 'Duplicate entry: A user with this email already exists.' });
         }
 
