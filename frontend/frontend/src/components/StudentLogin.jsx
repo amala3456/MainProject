@@ -41,7 +41,7 @@ const StudentLogin = () => {
         <Typography variant="h5" gutterBottom style={{ color: '#006D5B', fontFamily: 'TimesNewRoman' }}>
           Student Login
         </Typography>
-        <br />
+        
         <TextField
           id="email"
           label="Email"
@@ -60,7 +60,7 @@ const StudentLogin = () => {
           onChange={inputHandler}
           className='input'
         />
-        <br /><br />
+        <br /> <br />
         <Button
           variant="contained"
           style={{ width: '45%', borderRadius: '50px', backgroundColor: '#006D5B' }}
