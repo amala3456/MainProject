@@ -14,7 +14,7 @@ const AdminDash = () => {
       <div className="row">
 {/* here */}
 <div className="col-sm-6">
-  < div className="card mb-4" style={{height: '206px',border: "1.6px solid black" }}> 
+  < div className="card mb-4" style={{height: '208px',border: "1.6px solid black" }}> 
     <div className="card" style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '10px', width: '100%', border: "0px" }}>
       <div className="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light" style={{height: '200%' }}>
         <img src="https://7wdata.be/wp-content/uploads/2016/05/data-scientist-venn-diagram1.jpg" className="img-fluid" alt="Nature" style={{ width: '95%' }} /> 
@@ -160,11 +160,11 @@ const AdminDash = () => {
         </a>
       </div>
       <div className="card-body" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', textAlign: 'center' }}>
-        <h5 className="card-title">Card title</h5>
+        <h5 className="card-title">KKEM March .NET</h5>
         <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         <Button
           component={Link}
-          to="/sDetails"
+          to=""
           variant="contained"
           style={{ width: "50%", borderRadius: "11px", backgroundColor: '#009B81', color: 'white', marginTop: '10px', alignSelf: 'center' }}
         >
