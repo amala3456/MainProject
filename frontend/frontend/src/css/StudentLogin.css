@@ -7,7 +7,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-size: 130vh;
+  background-size: 120vh;
 }
 
 
@@ -24,7 +24,7 @@
   height: 60%;
   border-radius: 10px;
   margin-top:-70px;
-  margin-left: 1000px;
+  margin-left: 750px;
   background-image: linear-gradient(to top,rgba(0, 128, 128, 0.571),white) ;
   box-shadow: 0 0 10px  rgb(38, 10, 3);
 }
@@ -32,7 +32,6 @@
 .input input {
   color: #006D5B !important;
 }
-
 .input .MuiOutlinedInput-notchedOutline {
   border-color: #006D5B !important;
 }
@@ -43,10 +42,5 @@
 
 .logimage{
   width: 120px;
-  margin-top: 5px;
+  margin-top: 5px;
 }
-
-
-
-
-

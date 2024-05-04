@@ -35,7 +35,7 @@ const StudentLogin = () => {
 
   return (
     <div className='studentlog'>
-      <div className='login-form'>
+      <div className='login-form' >
         <br />
         <img src={loginImage} alt="" className='logimage' />
         <Typography variant="h5" gutterBottom style={{ color: '#006D5B', fontFamily: 'TimesNewRoman' }}>
@@ -47,6 +47,7 @@ const StudentLogin = () => {
           label="Email"
           variant="outlined"
           name='email'
+          style={{ width: '70%', borderRadius: '50%' }}
           onChange={inputHandler}
           className='input'
         />
@@ -57,6 +58,8 @@ const StudentLogin = () => {
           variant="outlined"
           type="password"
           name='password'
+          style={{ width: '70%', borderRadius: '50%' }}
+          
           onChange={inputHandler}
           className='input'
         />
