@@ -24,7 +24,7 @@ const AdminDash = () => {
       </div>
       <div className="card-body" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', textAlign: 'center' }}>
         <h5 className="card-title">KKEM March DSA</h5>
-        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p className="card-text">Click details to view complete list of students</p>
         <Button
           component={Link}
           to="/sdsa"
@@ -38,7 +38,7 @@ const AdminDash = () => {
   </div>
 </div>
 
-{/* till her */}
+{/* till here */}
        
         <div className="col-sm-6">
           <div className="card mb-4" style={{border: "1.6px solid black"}}>
@@ -51,7 +51,7 @@ const AdminDash = () => {
       </div>
       <div className="card-body" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', textAlign: 'center' }}>
         <h5 className="card-title">KKEM March FSD</h5>
-        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p className="card-text">Click details to view complete list of students</p>
         <Button
           component={Link}
           to="/sfsd"
@@ -77,7 +77,7 @@ const AdminDash = () => {
       </div>
       <div className="card-body" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', textAlign: 'center' }}>
         <h5 className="card-title">KKEM March MLAI</h5>
-        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p className="card-text">Click details to view complete list of students</p>
         <Button
           component={Link}
           to="/smlai"
@@ -91,21 +91,21 @@ const AdminDash = () => {
      </div>
           </div>
         </div>
-{/* till her */}
+{/* till here */}
 
 {/* here */}
 <div className="col-sm-6">
           <div className="card mb-4" >
           <div className="card" style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '10px', width: '100%', margin: '',border:"1.6px solid black" }}>
       <div className="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
-        <img src="https://www.topsinfosolutions.com/wp-content/uploads/2019/01/info-graphics.png" className="img-fluid" alt="Nature" style={{ width: '100%', objectFit: 'cover' }} />
+        <img src="https://www.mameloo.com/wp-content/uploads/2019/06/Threat-Protect-Cyber-Security-Framework.png" className="img-fluid" alt="Nature" style={{ width: '89.5%', objectFit: 'cover' }} />
         <a href="#!">
           <div className="mask"></div>
         </a>
       </div>
       <div className="card-body" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', textAlign: 'center' }}>
         <h5 className="card-title">KKEM March CSA</h5>
-        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p className="card-text">Click details to view complete list of students</p>
         <Button
           component={Link}
           to="/scsa"
@@ -119,7 +119,7 @@ const AdminDash = () => {
      </div>
           </div>
         </div>
-{/* till her */}
+{/* till here */}
 
 {/* here */}
 <div className="col-sm-6">
@@ -133,7 +133,7 @@ const AdminDash = () => {
       </div>
       <div className="card-body" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', textAlign: 'center' }}>
         <h5 className="card-title">KKEM March ST</h5>
-        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p className="card-text">Click details to view complete list of students</p>
         <Button
           component={Link}
           to="/sst"
@@ -147,24 +147,24 @@ const AdminDash = () => {
      </div>
           </div>
         </div>
-{/* till her */}
+{/* till here */}
 
 {/* here */}
 <div className="col-sm-6">
           <div className="card mb-4" >
           <div className="card" style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '10px', width: '100%', margin: '',border:"1.6px solid black" }}>
       <div className="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
-        <img src="https://www.topsinfosolutions.com/wp-content/uploads/2019/01/info-graphics.png" className="img-fluid" alt="Nature" style={{ width: '100%', objectFit: 'cover' }} />
+        <img src="https://wpguru.co.uk/wp-content/uploads/2020/04/dotnet-logo.png" className="img-fluid" alt="Nature" style={{ width: '89.4%', objectFit: 'cover' }} />
         <a href="#!">
           <div className="mask"></div>
         </a>
       </div>
       <div className="card-body" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', textAlign: 'center' }}>
         <h5 className="card-title">KKEM March .NET</h5>
-        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p className="card-text">Click details to view complete list of students</p>
         <Button
           component={Link}
-          to=""
+          to="/sst"
           variant="contained"
           style={{ width: "50%", borderRadius: "11px", backgroundColor: '#009B81', color: 'white', marginTop: '10px', alignSelf: 'center' }}
         >
@@ -175,7 +175,7 @@ const AdminDash = () => {
      </div>
           </div>
         </div>
-{/* till her */}
+{/* till here */}
 
       </div>
     </div>
