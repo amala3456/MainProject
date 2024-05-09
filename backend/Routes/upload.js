@@ -17,7 +17,20 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage });
 
-router.post('/upload', upload.single('file'), (req, res) => {
+function verifytoken(req,res,next){
+  const token = req.headers.token;
+  try {
+      if(!token) throw 'unauthorized access';
+      let payload = jwt.verify(token,'reactapp');
+      if(!payload) throw 'unauthorized access';
+      next()
+  } catch (error) {
+      res.status(404).send('Caught an error')
+  }
+ 
+} 
+
+router.post('/upload', verifytoken, upload.single('file'), (req, res) => {
   if (req.file) {
     console.log('File uploaded successfully');
     res.status(200).send('success');

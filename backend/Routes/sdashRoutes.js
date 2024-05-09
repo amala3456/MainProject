@@ -1,10 +1,24 @@
 const express = require('express');
 const router = express.Router();
 const users = require('../Model/studentDash');
+const jwt = require('jsonwebtoken');
 
 router.use(express.json());
 
-router.post('/add', async (req, res) => {
+function verifytoken(req,res,next){
+    const token = req.headers.token;
+    try {
+        if(!token) throw 'unauthorized access';
+        let payload = jwt.verify(token,'reactapp');
+        if(!payload) throw 'unauthorized access';
+        next()
+    } catch (error) {
+        res.status(404).send('Caught an error')
+    }
+   
+} 
+
+router.post('/add', verifytoken, async (req, res) => {
     try {
         // Extract fields from request body
         const { name, phone, email, dob, batch, gender } = req.body;

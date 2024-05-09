@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 import { Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import Table from '@mui/material/Table';
@@ -12,6 +12,7 @@ import Paper from '@mui/material/Paper';
 import EmailIcon from '@mui/icons-material/Email';
 import { Button } from '@mui/material';
 import { Link } from 'react-router-dom';
+import axiosInstance from '../axiosinterceptor';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -43,7 +44,7 @@ function Smlai() {
   const handleUpload = () => {
     const formData = new FormData()
     formData.append('file', file)
-    axios.post('http://localhost:3005/api/upload', formData)
+    axiosInstance.post('http://localhost:3005/api/upload', formData)
       .then(res => { 
         alert('Successfully uploaded')
         console.log(res.data)
@@ -57,7 +58,7 @@ function Smlai() {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get('http://localhost:3005/api/students');
+        const response = await axiosInstance.get('http://localhost:3005/api/students');
         // Filter users belonging to "KKEM March DSA" batch
         const filteredUsers = response.data.filter(user => user.batch === 'KKEM March MLAI');
         setUsers(filteredUsers);
@@ -71,7 +72,7 @@ function Smlai() {
 
   const sendEmails = async (email) => {
     try {
-      await axios.post('http://localhost:3005/api/email', { email });
+      await axiosInstance.post('http://localhost:3005/api/email', { email });
       console.log('Email sent successfully');
     } catch (error) {
       console.error('Error sending emails:', error);

@@ -14,8 +14,21 @@ const transporter = nodemailer.createTransport({
   },
 });
 
+function verifytoken(req,res,next){
+  const token = req.headers.token;
+  try {
+      if(!token) throw 'unauthorized access';
+      let payload = jwt.verify(token,'reactapp');
+      if(!payload) throw 'unauthorized access';
+      next()
+  } catch (error) {
+      res.status(404).send('Caught an error')
+  }
+ 
+} 
+
 // Define the route to handle sending emails
-router.post('/email', async (req, res) => {
+router.post('/email',verifytoken, async (req, res) => {
   try {
     const { email } = req.body;
 

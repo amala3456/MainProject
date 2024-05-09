@@ -11,7 +11,9 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import '../css/StudentDash.css';
 import Select from '@mui/material/Select';
 import { useState } from 'react';
-import axios from 'axios';
+// import axios from 'axios';
+import axiosInstance from '../axiosinterceptor';
+
 
 const StudentDash = () => {
 
@@ -42,7 +44,9 @@ const StudentDash = () => {
             alert("Phone number must be 10 digits.");
             return;
         }
-        axios.post("http://localhost:3005/api/add", users)
+
+        
+        axiosInstance.post("http://localhost:3005/api/add", users)
             .then((res) => {
                 if (res.data.error) {
                     alert(res.data.error); // Show error message if the form submission fails
@@ -53,7 +57,7 @@ const StudentDash = () => {
             })
             .catch((err) => {
                 console.error("Error adding user:", err);
-                alert("Duplicate user"); // Show a generic error message for any unexpected errors
+                alert("Unable to proceed"); // Show a generic error message for any unexpected errors
             });
     };
 
@@ -151,7 +155,4 @@ const StudentDash = () => {
 
 
 export default StudentDash
-
-
-
 
