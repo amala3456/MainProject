@@ -52,12 +52,12 @@ const Navbar = () => {
             <MenuItem>
               <Link href="#" color="inherit" underline="none">Home</Link>
             </MenuItem>
-            <MenuItem>
+            {/* <MenuItem>
               <Link href="#" color="inherit" underline="none">About Us</Link>
             </MenuItem>
             <MenuItem>
               <Link href="#" color="inherit" underline="none">Contact Us</Link>
-            </MenuItem>
+            </MenuItem> */}
           </Menu>
         ) : (
           // Render normal buttons for larger screens
@@ -67,16 +67,16 @@ const Navbar = () => {
             </Button>
             {/* <Button variant='contained' color="inherit" style={{ borderRadius: "18px", marginRight: '20px', backgroundColor: '#00463a' }}>
               <Link to={"/"} style={{ textDecoration: "none", color: 'white' }}>LOGIN</Link>
-            </Button> */}
-            <Button variant='contained' color="inherit" style={{ borderRadius: "18px", marginRight: '20px', backgroundColor: '#00463a' }}>
+            </Button>  */}
+             {/* <Button variant='contained' color="inherit" style={{ borderRadius: "18px", marginRight: '20px', backgroundColor: '#00463a' }}>
               <Link to={""} style={{ textDecoration: "none", color: 'white' }}>ABOUT US</Link>
             </Button>
             <Button variant='contained' color="inherit" style={{ borderRadius: "18px", marginRight: '20px', backgroundColor: '#00463a' }}>
               <Link to={""} style={{ textDecoration: "none", color: 'white' }}>CONTACT US</Link>
-            </Button>
+            </Button> */}
             <Button variant='contained' color="inherit" onClick={releaseToken} style={{ borderRadius: "18px", marginRight: '20px', backgroundColor: '#00463a' }}>
               <Link to={"/"} style={{ textDecoration: "none", color: 'white' }}>LOGOUT</Link>
-            </Button>
+            </Button> 
           </>
         )}
       </Toolbar>
