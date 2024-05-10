@@ -1,4 +1,4 @@
-// Frontend (React component)
+
 import React, { useState } from 'react';
 import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
@@ -22,6 +22,7 @@ const StudentLogin = () => {
       .then((res) => {
         if (res.data.message === 'Login successful') {
           alert('Login successful');
+          sessionStorage.setItem('userToken',res.data.token)
           navigate('/sdash');
         } else {
           alert('Login failed');
@@ -81,3 +82,6 @@ const StudentLogin = () => {
 };
 
 export default StudentLogin;
+
+
+

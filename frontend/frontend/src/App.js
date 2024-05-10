@@ -12,6 +12,7 @@ import Sst from './components/Sst';
 import Smlai from './components/Smlai';
 import Sfsd from './components/Sfsd';
 import Sdsa from './components/Sdsa';
+import PrivateRoutes from './components/PrivateRoutes';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
    
        <Route path='/adminlog' element={<Main child={<AdminLogin/>}/>} />
        <Route path={'/studentlog'} element={<Main child={<StudentLogin/>}/>} />
+       <Route element={<PrivateRoutes/>}>
        <Route path='/sdash' element={<Main child={<StudentDash/>}/>} />
        <Route path={'/admindash'} element={<Main child={<AdminDash/>}/>} />
 
@@ -33,7 +35,7 @@ function App() {
 <Route path={'/sfsd'} element={<Main child={<Sfsd/>}/>} />
 <Route path={'/smlai'} element={<Main child={<Smlai/>}/>} />
 <Route path={'/sst'} element={<Main child={<Sst/>}/>} />
-
+</Route>
       </Routes>
     </div>
   );

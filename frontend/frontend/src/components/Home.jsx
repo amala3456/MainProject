@@ -25,7 +25,7 @@ const Home = () => {
 
     <Container sx={{ borderRadius: '18px',border: "3px solid #00322a" ,marginTop:"10px", backgroundImage: "url('https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/Sz9LmzxmBjyscquj0/videoblocks-serious-young-businessman-working-on-computer-indoors_svzmrk3wp_thumbnail-1080_01.png')", backgroundSize: '100%', color: 'black', textAlign: 'center', padding: '150px'}}>
         <Typography variant="h2" style={{ fontSize: '36px',margin: '0px 10px 20px 700px' }}>Welcome to ICTAK Exam Registration Portal</Typography>
-        <Typography variant="body1" style={{ fontSize: '18px', margin: '0px 10px 20px 700px' }}>Register for exams and track your progress with ease! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, exercitationem.</Typography>
+        <Typography variant="body1" style={{ fontSize: '18px', margin: '0px 10px 20px 700px' }}>Register for exams and track your progress with ease! Gain insights into your performance and stay updated on your exam preparation journey.</Typography>
         <Button variant="contained"
          color="primary"
          onClick={addHandler}
@@ -57,10 +57,10 @@ alt="green iguana"
 />
 <CardContent>
 <Typography gutterBottom variant="h5" component="div">
-FREE DEMO CLASSES
+DEMO CLASSES
 </Typography>
 <Typography variant="body2" color="text.secondary">
-Learn how to use the MERN stack, a JavaScript/JSON-based three-tier architecture that replaces Angular.js with React.js and connects MongoDB, Express.js, and Node.js.
+Before enrolling, a free DEMO lesson is provided.
 </Typography>
 </CardContent>
 </CardActionArea>
@@ -78,7 +78,7 @@ alt="green iguana"
 <Typography gutterBottom variant="h5" component="div">
 BACKUP CLASSES</Typography>
 <Typography variant="body2" color="text.secondary">
-Learn how to use the MERN stack, a JavaScript/JSON-based three-tier architecture that replaces Angular.js with React.js and connects MongoDB, Express.js, and Node.js.
+Missed classes are covered with backup classes  
 </Typography>
 </CardContent>
 </CardActionArea>
@@ -95,9 +95,9 @@ alt="green iguana"
 />
 <CardContent>
 <Typography gutterBottom variant="h5" component="div">
-FREE TECHNICAL SUPPORT</Typography>
+TECHNICAL SUPPORT</Typography>
 <Typography variant="body2" color="text.secondary">
-Learn how to use the MERN stack, a JavaScript/JSON-based three-tier architecture that replaces Angular.js with React.js and connects MongoDB, Express.js, and Node.js.
+Connect to technical discussion boards for project help 
 </Typography>
 </CardContent>
 </CardActionArea>
@@ -115,7 +115,7 @@ alt="green iguana"
 <Typography gutterBottom variant="h5" component="div">
 EVALUATION PROCESS</Typography>
 <Typography variant="body2" color="text.secondary">
-Learn how to use the MERN stack, a JavaScript/JSON-based three-tier architecture that replaces Angular.js with React.js and connects MongoDB, Express.js, and Node.js.
+After the end of the course, each student is assessed
 </Typography>
 </CardContent>
 </CardActionArea>
@@ -135,11 +135,10 @@ alt="green iguana"
 />
 <CardContent>
 <Typography gutterBottom variant="h5" component="div">
-EVALUATION PROCESS
+REAL TIME PROJECTS
 </Typography>
 <Typography variant="body2" color="text.secondary">
-Learn how to use the MERN stack, a JavaScript/JSON-based three-tier architecture that replaces Angular.js with React.js and connects MongoDB, Express.js, and Node.js.
-</Typography>
+Gain world class exposure with our real time projects</Typography>
 </CardContent>
 </CardActionArea>
 </Card>
@@ -157,7 +156,7 @@ alt="green iguana"
 <Typography gutterBottom variant="h5" component="div">
 HR SESSIONS</Typography>
 <Typography variant="body2" color="text.secondary">
-Learn how to use the MERN stack, a JavaScript/JSON-based three-tier architecture that replaces Angular.js with React.js and connects MongoDB, Express.js, and Node.js.
+Before you join , you recieve a complimentary HR session
 </Typography>
 </CardContent>
 </CardActionArea>
@@ -177,8 +176,7 @@ alt="green iguana"
 JOB ORIENTED COURSES
 </Typography>
 <Typography variant="body2" color="text.secondary">
-Learn how to use the MERN stack, a JavaScript/JSON-based three-tier architecture that replaces Angular.js with React.js and connects MongoDB, Express.js, and Node.js.
-</Typography>
+Offers career focused training with hand-picked job orientation</Typography>
 </CardContent>
 </CardActionArea>
 </Card>
@@ -195,8 +193,7 @@ alt="green iguana"
 <Typography gutterBottom variant="h5" component="div">
 INTERVIEW TIPS</Typography>
 <Typography variant="body2" color="text.secondary">
-Learn how to use the MERN stack, a JavaScript/JSON-based three-tier architecture that replaces Angular.js with React.js and connects MongoDB, Express.js, and Node.js.
-</Typography>
+our HR team provides you with interview tips and sessions</Typography>
 </CardContent>
 </CardActionArea>
 </Card>
@@ -214,7 +211,7 @@ Learn how to use the MERN stack, a JavaScript/JSON-based three-tier architecture
       <img src="https://yourengineer.in/wp-content/uploads/2021/07/PD-Leverage-MERN-Stack-for-building-efficient-websites-Thumbnail.png" class="d-block w-80 mx-auto" style={{width:"48%", borderRadius:"25px"}} alt="..."/>
       <div class="d-none d-md-block" style={{marginTop:"45px",fontSize:"25px",color:" #21292d"}}>
         <h2>MERN  Stack</h2>
-        <p>Some representative placeholder content for the first slide.</p>
+        <p> Learn to build dynamic web applications using MongoDB, Express.js, React, and Node.js, covering the entire web development process from front to back.</p>
       </div>
     </div>
 
@@ -222,7 +219,7 @@ Learn how to use the MERN stack, a JavaScript/JSON-based three-tier architecture
       <img src="https://image.freepik.com/free-vector/cyber-security-illustration-concept-with-people_23-2148530634.jpg" class="d-block w-80 mx-auto" style={{ width: '50%', borderRadius:"25px" }} alt="..."/>
       <div class="d-none d-md-block" style={{marginTop:"45px",fontSize:"25px",color:" #21292d"}}>
         <h2>Cyber Security</h2>
-        <p>Some representative placeholder content for the second slide.</p>
+        <p>Learn to protect digital systems, networks, and data from cyber threats and attacks through comprehensive training in cybersecurity principles, tools, and best practices.</p>
       </div>
     </div>
 
@@ -230,7 +227,7 @@ Learn how to use the MERN stack, a JavaScript/JSON-based three-tier architecture
       <img src="https://wallpaperbat.com/img/392227-what-is-data-science-dataquest.jpg" class="d-block w-80 mx-auto" style={{ width: '59%', borderRadius:"25px" }} alt="..."/>
       <div class="d-none d-md-block" style={{marginTop:"45px",fontSize:"25px",color:" #21292d"}}>
         <h2>Data Science</h2>
-        <p>Some representative placeholder content for the third slide.</p>
+        <p>Dive into the world of data analysis and machine learning, exploring techniques to extract insights from large datasets and make data-driven decisions across various industries.</p>
       </div>
     </div>
     
@@ -238,7 +235,7 @@ Learn how to use the MERN stack, a JavaScript/JSON-based three-tier architecture
       <img src="https://p.kindpng.com/picc/s/13-132027_-net-framework-hd-png-download.png" class="d-block w-80 mx-auto" style={{ width: '45%', borderRadius:"25px" }} alt="..."/>
       <div class="d-none d-md-block" style={{marginTop:"45px",fontSize:"25px",color:" #21292d"}}>
         <h2>.NET Devoloper</h2>
-        <p>Some representative placeholder content for the 4thslide.</p>
+        <p>Gain expertise in developing robust and scalable applications using the .NET framework, including C#, ASP.NET, and other related technologies, suitable for enterprise-level software development.</p>
       </div>
     </div>
     
@@ -246,7 +243,7 @@ Learn how to use the MERN stack, a JavaScript/JSON-based three-tier architecture
       <img src="http://blog.mymeanstackdeveloper.com/wp-content/uploads/2018/08/Mean-Stack-Development.png" class="d-block w-80 mx-auto" style={{ width: '53.5%', borderRadius:"25px" }} alt="..."/>
       <div class="d-none d-md-block" style={{marginTop:"45px",fontSize:"25px",color:" #21292d"}}>
         <h2>MEAN Stack</h2>
-        <p>Some representative placeholder content for the 4thslide.</p>
+        <p>Explore the components of the MEAN stack - MongoDB, Express.js, Angular, and Node.js - and discover how to build modern, full-stack web applications efficiently and effectively.</p>
       </div>
     </div>
 
@@ -254,7 +251,7 @@ Learn how to use the MERN stack, a JavaScript/JSON-based three-tier architecture
       <img src="https://img.graphicsurf.com/2020/10/software-testing-vector-free-illustration.jpg" class="d-block w-80 mx-auto" style={{ width: '50%', borderRadius:"25px" }} alt="..."/>
       <div class="d-none d-md-block" style={{marginTop:"45px",fontSize:"25px",color:" #21292d"}}>
         <h2>Software Testing</h2>
-        <p>Some representative placeholder content for the 4thslide.</p>
+        <p>Master the art of ensuring software quality and reliability by learning various testing methodologies, tools, and techniques to detect and fix bugs and defects in software applications.</p>
       </div>
     </div>
     
@@ -301,7 +298,7 @@ Learn how to use the MERN stack, a JavaScript/JSON-based three-tier architecture
 <MDBFooter bgColor='light' className='text-center text-lg-start text-muted'>
       <section className='d-flex justify-content-center justify-content-lg-b#etween p-4 border-bottom'>
         <div className='me-5 d-none d-lg-block'>
-          <span>Get connected with us on social networks:</span>
+          <span>Get connected with us on social networks:</span>   facebook instagram linkedin
         </div>
 
         <div>
@@ -340,7 +337,7 @@ Learn how to use the MERN stack, a JavaScript/JSON-based three-tier architecture
             </MDBCol>
 
             <MDBCol md='2' lg='2' xl='2' className='mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>Products</h6>
+              <h6 className='text-uppercase fw-bold mb-4'>Useful Links</h6>
               <p>
                 <a href='#!' className='text-reset'>
                   Angular
@@ -363,7 +360,7 @@ Learn how to use the MERN stack, a JavaScript/JSON-based three-tier architecture
               </p>
             </MDBCol>
 
-            <MDBCol md='3' lg='2' xl='2' className='mx-auto mb-4'>
+            {/* <MDBCol md='3' lg='2' xl='2' className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>Useful links</h6>
               <p>
                 <a href='#!' className='text-reset'>
@@ -385,13 +382,13 @@ Learn how to use the MERN stack, a JavaScript/JSON-based three-tier architecture
                   Help
                 </a>
               </p>
-            </MDBCol>
+            </MDBCol> */}
 
             <MDBCol md='4' lg='3' xl='3' className='mx-auto mb-md-0 mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
               <p>
                 <MDBIcon color='secondary' icon='home' className='me-2' />
-G1, Ground Floor, Thejaswini, Technopark Campus Thiruvananthapuram, Kerala, India - 695 581 Office: +91 471 270 0811
+                G1, Ground Floor, Thejaswini, Technopark Campus Thiruvananthapuram, Kerala, India - 695 581 Office: +91 471 270 0811
               </p>
               <p>
                 <MDBIcon color='secondary' icon='envelope' className='me-3' />

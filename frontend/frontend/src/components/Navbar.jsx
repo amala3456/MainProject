@@ -13,6 +13,10 @@ import {MenuItem, Menu } from '@mui/material';
 import StudentLogin from './StudentLogin';
 // import MenuIcon from '@mui/icons-material/Menu';
 const Navbar = () => {
+  const releaseToken = () => {
+    sessionStorage.removeItem('userToken');
+  };
+  
 
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm')); // Adjust breakpoint as needed
@@ -70,7 +74,7 @@ const Navbar = () => {
             <Button variant='contained' color="inherit" style={{ borderRadius: "18px", marginRight: '20px', backgroundColor: '#00463a' }}>
               <Link to={""} style={{ textDecoration: "none", color: 'white' }}>CONTACT US</Link>
             </Button>
-            <Button variant='contained' color="inherit" style={{ borderRadius: "18px", marginRight: '20px', backgroundColor: '#00463a' }}>
+            <Button variant='contained' color="inherit" onClick={releaseToken} style={{ borderRadius: "18px", marginRight: '20px', backgroundColor: '#00463a' }}>
               <Link to={"/"} style={{ textDecoration: "none", color: 'white' }}>LOGOUT</Link>
             </Button>
           </>
