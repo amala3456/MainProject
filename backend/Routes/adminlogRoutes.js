@@ -1,7 +1,7 @@
 const express = require('express');
 const adminlogRoutes = express.Router();
-
 const adminlogSchema = require('../Model/Adminlog');
+const jwt = require('jsonwebtoken');
 adminlogRoutes.use(express.json());
 
 // Route for login
@@ -17,11 +17,14 @@ adminlogRoutes.post('/adminlog', async (req, res) => {
         if (admin.password !== password) {
             return res.status(401).json({ message: "Login failed! Incorrect password." });
         }
-
+        let payload = { username: username };
+        let token = jwt.sign(payload, 'reactapp');
         return res.status(200).json({ message: "Login successful" });
+        console.log('success')
     } catch (error) {
         console.error(error);
         return res.status(500).json({ message: "Internal server error" });
     }
 });
 module.exports = adminlogRoutes;
+

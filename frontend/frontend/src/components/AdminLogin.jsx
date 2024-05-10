@@ -20,6 +20,7 @@ const AdminLogin = () => {
           .then((res) => {
             if (res.data.message === 'Login successful') {
               alert('Login successful');
+              sessionStorage.setItem('userToken',res.data.token)
               navigate('/admindash');
             } else {
               alert('Login failed');
@@ -66,7 +67,9 @@ const AdminLogin = () => {
                             <i className='bx bxs-lock-alt'></i>
                         </div>
                       
-                        <Button type="button" style={{color:'white',borderRadius:'40px',width:'200px'}} className='btn' onClick = { addHandler }>Login</Button>
+                        <Button 
+                         style={{color:'white',borderRadius:'40px',width:'200px'}} className='btn'
+                          onClick = { addHandler }>Login</Button>
                         <br />
                         <h6 href='#'>Forgot Password?</h6>
                     </form>
@@ -77,6 +80,5 @@ const AdminLogin = () => {
 };
 
 export default AdminLogin;
-
 
 
