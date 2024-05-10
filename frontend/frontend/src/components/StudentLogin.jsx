@@ -36,7 +36,7 @@ const StudentLogin = () => {
   return (
     <div className='studentlog'>
       <div className='login-form' >
-        <br />
+        
         <img src={loginImage} alt="" className='logimage' />
         <Typography variant="h5" gutterBottom style={{ color: '#006D5B', fontFamily: 'TimesNewRoman' }}>
           Student Login
@@ -73,7 +73,7 @@ const StudentLogin = () => {
         </Button>
         <br />
         <Typography style={{ fontFamily: 'TimesNewRoman' }}>
-          Not a student? <Link to="/adminlog" style={{ textDecoration: 'none', color: '#006D5B', fontFamily: 'TimesNewRoman' }}>Admin Login</Link>
+          Not a student? <Link to="/adminlog" style={{ textDecoration: 'none', color: 'blue', fontFamily: 'TimesNewRoman' }}>Admin Login</Link>
         </Typography>
       </div>
     </div>

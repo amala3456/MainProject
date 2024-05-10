@@ -3,6 +3,8 @@ import axios from 'axios';
 import '../css/AdminLogin.css';
 import { Link, useNavigate } from 'react-router-dom'; // Import useNavigate
 import { Button } from '@mui/material';
+// import vedio1 from "../assets/vedio1.mp4";
+import image from "../assets/adminlog.gif"
 
 const AdminLogin = () => {
     const navigate = useNavigate();
@@ -30,7 +32,11 @@ const AdminLogin = () => {
     };
 
     return (
-        <div className='bg'>
+        <div className='adminlogin'>
+          {/* <video src={vedio1}autoPlay loop muted /> */}
+          <img src={image} alt=""  className='bg' style={{width:'203vh'}}/>
+            
+        
             <div className='wrapper'>
                 <div className='form-box adminlogin'>
                     <form>
@@ -66,7 +72,7 @@ const AdminLogin = () => {
                     </form>
                 </div>
             </div>
-        </div>
+            </div>
     );
 };
 

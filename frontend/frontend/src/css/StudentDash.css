@@ -9,7 +9,8 @@ body,html{
     margin-top: 25%  auto;
     position: absolute;
     bottom: 10px;
-    left: 140px;
+    left: 300px;
+    
 }
 
 #outlined-basic{
@@ -21,7 +22,7 @@ body,html{
 
 
 .page {
-    background: url('../images/bgmi11.jpeg') no-repeat;
+    background: url('../assets/studentdashboard000.gif') no-repeat;
     background-size: cover;
     height: 100%;
 

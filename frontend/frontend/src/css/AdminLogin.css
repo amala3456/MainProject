@@ -1,14 +1,14 @@
 
 .bg {
+
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 50vh;
     background-size: cover;
     background-position: calc();
-    background: url('../images/img2.png') no-repeat ;
-    margin-top: 10px;
-    background-size: 100vh;
+    /* background: url('../images/img2.png') no-repeat ; */
+   
 }
 
 .wrapper{
@@ -16,7 +16,6 @@
     position: relative;
     width: 750px;
     height: 450px;
-    background: transparent;
     color: #006058;
 
 }
@@ -29,24 +28,24 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: -40px;
-    margin-left: 600px;
+    margin-top: -730px;
+    margin-left: 1120px;
     border-radius: 30px;
 }
 
 .wrapper .form-box.adminlogin {
     left: 0;
-    background: #048f8800;
+    background: #30c81cba;
     background: transparent;
     padding: 0 40px;
-    background-image: linear-gradient(to top,rgba(21, 193, 98, 0.223),#06312d67) ;
+    background-image: linear-gradient(to top,rgba(24, 190, 208, 0.889),#2d8e8467) ;
 }
 
 .form-box h1 {
     font-size: 32px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
-    color: #025043b6;
+    color:#06931bb6 ;
     text-align: center;
 }
 
@@ -117,7 +116,7 @@
     background: #fff;
     border: none;
     outline: none;
-    background-image: linear-gradient(to top,#025043b6,#28a99e) ;
+    background-image: linear-gradient(to top,#06931bb6,#28a99e) ;
     /* background-image: teal; */
     border-radius:100px;
     outline: none;
@@ -129,19 +128,3 @@
     overflow: hidden;
 }
 
-/* .btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 300%;
-    background: linear-gradient(#081b29,#0ef,#081b29
-    #0ef);
-    z-index: -1;
-}
-
-.btn:hover::before {
-    top: 0;
-} */
- 
