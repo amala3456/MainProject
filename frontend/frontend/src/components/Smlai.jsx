@@ -44,7 +44,7 @@ function Smlai() {
   const handleUpload = () => {
     const formData = new FormData()
     formData.append('file', file)
-    axiosInstance.post('http://localhost:3005/api/upload', formData)
+    axiosInstance.post('https://mainproject-j66p.onrender.com/api/upload', formData)
       .then(res => { 
         alert('Successfully uploaded')
         console.log(res.data)
@@ -58,7 +58,7 @@ function Smlai() {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axiosInstance.get('http://localhost:3005/api/students');
+        const response = await axiosInstance.get('https://mainproject-j66p.onrender.com/api/students');
         // Filter users belonging to "KKEM March DSA" batch
         const filteredUsers = response.data.filter(user => user.batch === 'KKEM March MLAI');
         setUsers(filteredUsers);
@@ -72,7 +72,7 @@ function Smlai() {
 
   const sendEmails = async (email) => {
     try {
-      await axiosInstance.post('http://localhost:3005/api/email', { email });
+      await axiosInstance.post('https://mainproject-j66p.onrender.com/api/email', { email });
       console.log('Email sent successfully');
     } catch (error) {
       console.error('Error sending emails:', error);

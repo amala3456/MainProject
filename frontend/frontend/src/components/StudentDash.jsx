@@ -46,7 +46,7 @@ const StudentDash = () => {
         }
 
         
-        axiosInstance.post("http://localhost:3005/api/add", users)
+        axiosInstance.post("https://mainproject-j66p.onrender.com/api/add", users)
             .then((res) => {
                 if (res.data.error) {
                     alert(res.data.error); // Show error message if the form submission fails

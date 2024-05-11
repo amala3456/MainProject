@@ -16,7 +16,7 @@ const AdminLogin = () => {
     };
 
     const addHandler = () => {
-        axios.post('http://localhost:3005/api/adminlog', admin)
+        axios.post('https://mainproject-j66p.onrender.com/api/adminlog', admin)
           .then((res) => {
             if (res.data.message === 'Login successful') {
               alert('Login successful');

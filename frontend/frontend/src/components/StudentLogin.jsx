@@ -18,7 +18,7 @@ const StudentLogin = () => {
   };
 
   const addHandler = () => {
-    axios.post('http://localhost:3005/api/studentlog', student)
+    axios.post('https://mainproject-j66p.onrender.com/api/studentlog', student)
       .then((res) => {
         if (res.data.message === 'Login successful') {
           alert('Login successful');
